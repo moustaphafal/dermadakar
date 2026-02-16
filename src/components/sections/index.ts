@@ -1,0 +1,6 @@
+export { Hero } from './Hero'
+export { Doctor } from './Doctor'
+export { Cabinet } from './Cabinet'
+export { Services } from './Services'
+export { Gallery } from './Gallery'
+export { Contact } from './Contact'
