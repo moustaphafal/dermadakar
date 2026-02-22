@@ -1,16 +1,37 @@
 'use client'
 
 import React from 'react'
+import type { ContactBlockType } from '@/payload-types'
 
-export const Contact: React.FC = () => {
+export const ContactBlockComponent: React.FC<ContactBlockType> = ({
+  sectionSubtitle,
+  sectionTitle,
+  address,
+  phone,
+  phone2,
+  email,
+  hours,
+  hours2,
+  ctaText,
+  ctaLabel,
+  ctaLink,
+  mapEmbedUrl,
+}) => {
+  const titleParts = (sectionTitle || 'Nous Contacter').split(' ')
+  const titlePrefix = titleParts.slice(0, -1).join(' ')
+  const titleBold = titleParts[titleParts.length - 1]
+
+  const addressLines = (address || '').split('\n')
+
   return (
     <section id="contact" className="py-24 bg-nude-400">
       <div className="container px-4">
         {/* Section title */}
         <div className="text-center mb-16">
-          <p className="text-white/70 text-sm tracking-[0.3em] uppercase mb-3">Prenez rendez-vous</p>
+          <p className="text-white/70 text-sm tracking-[0.3em] uppercase mb-3">{sectionSubtitle}</p>
           <h2 className="text-3xl md:text-5xl font-light text-white">
-            Nous <span className="font-semibold">Contacter</span>
+            {titlePrefix}{' '}
+            <span className="font-semibold">{titleBold}</span>
           </h2>
           <div className="flex items-center justify-center mt-6">
             <div className="h-px w-12 bg-white/30" />
@@ -32,9 +53,12 @@ export const Contact: React.FC = () => {
               </div>
               <h4 className="text-white font-semibold text-sm mb-1">Adresse</h4>
               <p className="text-white/80 text-sm">
-                Rue X, Quartier Y
-                <br />
-                Dakar, Sénégal
+                {addressLines.map((line, i) => (
+                  <React.Fragment key={i}>
+                    {i > 0 && <br />}
+                    {line}
+                  </React.Fragment>
+                ))}
               </p>
             </div>
 
@@ -47,9 +71,13 @@ export const Contact: React.FC = () => {
               </div>
               <h4 className="text-white font-semibold text-sm mb-1">Téléphone</h4>
               <p className="text-white/80 text-sm">
-                +221 XX XXX XX XX
-                <br />
-                +221 XX XXX XX XX
+                {phone}
+                {phone2 && (
+                  <>
+                    <br />
+                    {phone2}
+                  </>
+                )}
               </p>
             </div>
 
@@ -61,7 +89,7 @@ export const Contact: React.FC = () => {
                 </svg>
               </div>
               <h4 className="text-white font-semibold text-sm mb-1">Email</h4>
-              <p className="text-white/80 text-sm">contact@dermadakar.com</p>
+              <p className="text-white/80 text-sm">{email}</p>
             </div>
 
             {/* Hours */}
@@ -73,42 +101,46 @@ export const Contact: React.FC = () => {
               </div>
               <h4 className="text-white font-semibold text-sm mb-1">Horaires</h4>
               <p className="text-white/80 text-sm">
-                Lun - Ven : 9h - 18h
-                <br />
-                Sam : 9h - 13h
+                {hours}
+                {hours2 && (
+                  <>
+                    <br />
+                    {hours2}
+                  </>
+                )}
               </p>
             </div>
           </div>
 
           {/* CTA Button */}
           <div className="text-center mb-12">
-            <p className="text-white/80 text-lg mb-6">
-              Prenez soin de votre peau, prenez rendez-vous dès maintenant.
-            </p>
+            <p className="text-white/80 text-lg mb-6">{ctaText}</p>
             <a
-              href="tel:+221XXXXXXXX"
+              href={ctaLink || 'tel:+221XXXXXXXX'}
               className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white text-nude-700 rounded-full text-sm tracking-widest uppercase font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-white/20 hover:scale-105 active:scale-95"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
               </svg>
-              Prendre Rendez-vous
+              {ctaLabel}
             </a>
           </div>
 
           {/* Google Maps */}
-          <div className="rounded-2xl overflow-hidden shadow-lg h-[350px] border border-white/20">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.8942261569373!2d-17.4440!3d14.6928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b3c5bb71%3A0xb5df18b79f14cf66!2sDakar%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Localisation du cabinet DermaDakar"
-            />
-          </div>
+          {mapEmbedUrl && (
+            <div className="rounded-2xl overflow-hidden shadow-lg h-[350px] border border-white/20">
+              <iframe
+                src={mapEmbedUrl}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localisation du cabinet DermaDakar"
+              />
+            </div>
+          )}
         </div>
       </div>
     </section>

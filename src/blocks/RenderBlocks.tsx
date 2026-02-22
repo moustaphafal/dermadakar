@@ -7,6 +7,13 @@ import { CallToActionBlock } from '@/blocks/CallToAction/Component'
 import { ContentBlock } from '@/blocks/Content/Component'
 import { FormBlock } from '@/blocks/Form/Component'
 import { MediaBlock } from '@/blocks/MediaBlock/Component'
+import { HeroBlockComponent } from '@/blocks/HeroBlock/Component'
+import { DoctorBlockComponent } from '@/blocks/DoctorBlock/Component'
+import { ServicesBlockComponent } from '@/blocks/ServicesBlock/Component'
+import { CabinetBlockComponent } from '@/blocks/CabinetBlock/Component'
+import { ReviewsBlockComponent } from '@/blocks/ReviewsBlock/Component'
+import { GalleryBlockComponent } from '@/blocks/GalleryBlock/Component'
+import { ContactBlockComponent } from '@/blocks/ContactBlock/Component'
 
 const blockComponents = {
   archive: ArchiveBlock,
@@ -14,6 +21,13 @@ const blockComponents = {
   cta: CallToActionBlock,
   formBlock: FormBlock,
   mediaBlock: MediaBlock,
+  heroBlock: HeroBlockComponent,
+  doctorBlock: DoctorBlockComponent,
+  servicesBlock: ServicesBlockComponent,
+  cabinetBlock: CabinetBlockComponent,
+  reviewsBlock: ReviewsBlockComponent,
+  galleryBlock: GalleryBlockComponent,
+  contactBlock: ContactBlockComponent,
 }
 
 export const RenderBlocks: React.FC<{
@@ -33,8 +47,19 @@ export const RenderBlocks: React.FC<{
             const Block = blockComponents[blockType]
 
             if (Block) {
+              // Custom dermadakar blocks are full-width sections with their own padding
+              const isFullWidthBlock = [
+                'heroBlock',
+                'doctorBlock',
+                'servicesBlock',
+                'cabinetBlock',
+                'reviewsBlock',
+                'galleryBlock',
+                'contactBlock',
+              ].includes(blockType)
+
               return (
-                <div className="my-16" key={index}>
+                <div className={isFullWidthBlock ? '' : 'my-16'} key={index}>
                   {/* @ts-expect-error there may be some mismatch between the expected types here */}
                   <Block {...block} disableInnerContainer />
                 </div>

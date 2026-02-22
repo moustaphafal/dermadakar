@@ -25,7 +25,7 @@ export const Gallery: React.FC = () => {
       : galleryImages.filter((img) => img.category === activeFilter)
 
   return (
-    <section id="photos" className="py-24 bg-nude-100">
+    <section id="photos" className="py-24 bg-white">
       <div className="container px-4">
         {/* Section title */}
         <div className="text-center mb-16">
@@ -34,9 +34,9 @@ export const Gallery: React.FC = () => {
             Les <span className="font-semibold">Photos</span>
           </h2>
           <div className="flex items-center justify-center mt-6">
-            <div className="h-px w-12 bg-nude-300" />
-            <div className="w-2 h-2 bg-nude-500 rounded-full mx-3" />
-            <div className="h-px w-12 bg-nude-300" />
+            <div className="h-px w-12 bg-rose-200" />
+            <div className="w-2 h-2 bg-rose-400 rounded-full mx-3" />
+            <div className="h-px w-12 bg-rose-200" />
           </div>
         </div>
 
@@ -48,8 +48,8 @@ export const Gallery: React.FC = () => {
               onClick={() => setActiveFilter(cat)}
               className={`px-6 py-2 rounded-full text-sm tracking-wider capitalize transition-all duration-300 ${
                 activeFilter === cat
-                  ? 'bg-nude-500 text-white shadow-md shadow-nude-500/25'
-                  : 'bg-white text-nude-600 hover:bg-nude-200'
+                  ? 'bg-rose-400 text-white shadow-md shadow-rose-400/25'
+                  : 'bg-white text-nude-600 hover:bg-rose-50'
               }`}
             >
               {cat}
@@ -86,7 +86,7 @@ export const Gallery: React.FC = () => {
               </div>
 
               {/* Hover overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-nude-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+              <div className="absolute inset-0 bg-gradient-to-t from-rose-500/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <div className="p-4">
                   <p className="text-white text-sm font-medium">{image.label}</p>
                   <p className="text-nude-200/80 text-xs capitalize">{image.category}</p>

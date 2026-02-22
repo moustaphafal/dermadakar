@@ -1,0 +1,123 @@
+import type { Block } from 'payload'
+
+export const ReviewsBlock: Block = {
+  slug: 'reviewsBlock',
+  interfaceName: 'ReviewsBlockType',
+  labels: {
+    singular: 'Avis',
+    plural: 'Avis',
+  },
+  fields: [
+    {
+      name: 'sectionSubtitle',
+      type: 'text',
+      required: true,
+      defaultValue: 'Témoignages',
+      label: 'Sous-titre de section',
+    },
+    {
+      name: 'sectionTitle',
+      type: 'text',
+      required: true,
+      defaultValue: 'Avis de nos Patients',
+      label: 'Titre de section',
+    },
+    {
+      name: 'reviews',
+      type: 'array',
+      label: 'Avis',
+      minRows: 1,
+      fields: [
+        {
+          name: 'name',
+          type: 'text',
+          required: true,
+          label: 'Nom du patient',
+        },
+        {
+          name: 'rating',
+          type: 'number',
+          required: true,
+          min: 1,
+          max: 5,
+          defaultValue: 5,
+          label: 'Note (1-5)',
+        },
+        {
+          name: 'date',
+          type: 'text',
+          required: true,
+          label: 'Date (ex: Janvier 2026)',
+        },
+        {
+          name: 'text',
+          type: 'textarea',
+          required: true,
+          label: 'Témoignage',
+        },
+        {
+          name: 'service',
+          type: 'text',
+          required: true,
+          label: 'Service concerné',
+        },
+      ],
+      defaultValue: [
+        {
+          name: 'Aminata D.',
+          rating: 5,
+          date: 'Janvier 2026',
+          text: "Un cabinet d'exception, un accueil chaleureux et un docteur très à l'écoute. Ma peau n'a jamais été aussi belle. Je recommande vivement !",
+          service: 'Dermatologie Esthétique',
+        },
+        {
+          name: 'Moussa S.',
+          rating: 5,
+          date: 'Décembre 2025',
+          text: "Très professionnel, le docteur a pris le temps de bien m'expliquer mon diagnostic et le traitement adapté. Les résultats sont remarquables.",
+          service: 'Dermatologie Médicale',
+        },
+        {
+          name: 'Fatou N.',
+          rating: 5,
+          date: 'Novembre 2025',
+          text: "Le cadre est magnifique et très propre. L'équipe est bienveillante et les soins sont de qualité. Une adresse incontournable à Dakar.",
+          service: 'Soins du visage',
+        },
+        {
+          name: 'Ibrahima K.',
+          rating: 4,
+          date: 'Octobre 2025',
+          text: 'Excellent suivi pour mon problème de peau. Le docteur est compétent et rassurant. Je suis très satisfait des résultats obtenus.',
+          service: 'Traitement Laser',
+        },
+        {
+          name: 'Aïssatou B.',
+          rating: 5,
+          date: 'Septembre 2025',
+          text: "J'avais des taches pigmentaires depuis des années. Grâce au traitement proposé, elles ont presque totalement disparu. Merci infiniment !",
+          service: 'Dermatologie Esthétique',
+        },
+        {
+          name: 'Ousmane M.',
+          rating: 5,
+          date: 'Août 2025',
+          text: "Cabinet moderne avec du matériel de pointe. Le docteur est d'une grande gentillesse et d'un professionnalisme exemplaire. Je recommande à 100%.",
+          service: 'Dermatoscopie',
+        },
+      ],
+    },
+    {
+      name: 'ctaText',
+      type: 'text',
+      defaultValue: 'Vous êtes patient(e) ? Partagez votre expérience avec nous.',
+      label: 'Texte CTA',
+    },
+    {
+      name: 'ctaLabel',
+      type: 'text',
+      defaultValue: 'Laisser un avis',
+      label: 'Texte bouton CTA',
+    },
+  ],
+}

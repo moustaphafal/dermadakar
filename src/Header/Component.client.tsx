@@ -8,6 +8,7 @@ import type { Header } from '@/payload-types'
 
 const navLinks = [
   { label: 'Accueil', href: '#accueil' },
+  { label: 'Avis', href: '#avis' },
   { label: 'Le Docteur', href: '#docteur' },
   { label: 'Le Cabinet', href: '#cabinet' },
   { label: 'Services', href: '#services' },
@@ -51,25 +52,19 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-lg shadow-nude-900/5 py-3'
-            : isHomepage
-            ? 'bg-transparent py-6'
-            : 'bg-white py-4 shadow-sm'
+            ? 'bg-nude-800/95 backdrop-blur-md shadow-lg shadow-nude-900/10 py-3'
+            : 'bg-nude-700/90 backdrop-blur-sm py-6'
         }`}
         {...(theme ? { 'data-theme': theme } : {})}
       >
         <div className="container px-4 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
-              scrolled || !isHomepage ? 'bg-nude-500' : 'bg-white/20 backdrop-blur-sm'
-            }`}>
+            <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-rose-400`}>
               <span className="text-white font-bold text-lg">D</span>
             </div>
             <div>
-              <span className={`text-xl font-light tracking-wider transition-colors duration-300 ${
-                scrolled || !isHomepage ? 'text-nude-900' : 'text-white'
-              }`}>
+              <span className={`text-xl font-light tracking-wider transition-colors duration-300 text-white`}>
                 Derma<span className="font-semibold">Dakar</span>
               </span>
             </div>
@@ -81,22 +76,14 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
               <a
                 key={link.href}
                 href={link.href}
-                className={`nav-link text-sm tracking-wider uppercase transition-colors duration-300 ${
-                  scrolled || !isHomepage
-                    ? 'text-nude-700 hover:text-nude-500'
-                    : 'text-white/80 hover:text-white'
-                }`}
+                className={`nav-link text-sm tracking-wider uppercase transition-colors duration-300 text-white/80 hover:text-white`}
               >
                 {link.label}
               </a>
             ))}
             <a
               href="#contact"
-              className={`ml-2 px-6 py-2.5 rounded-full text-xs tracking-widest uppercase transition-all duration-300 ${
-                scrolled || !isHomepage
-                  ? 'bg-nude-500 text-white hover:bg-nude-600 shadow-md shadow-nude-500/20'
-                  : 'bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white/30'
-              }`}
+              className={`ml-2 px-6 py-2.5 rounded-full text-xs tracking-widest uppercase transition-all duration-300 bg-rose-400 text-white hover:bg-rose-500 shadow-md shadow-rose-400/20`}
             >
               Rendez-vous
             </a>
@@ -109,9 +96,7 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
             aria-label="Menu"
           >
             <svg
-              className={`w-6 h-6 transition-colors ${
-                scrolled || !isHomepage ? 'text-nude-800' : 'text-white'
-              }`}
+              className={`w-6 h-6 transition-colors text-white`}
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -147,7 +132,7 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
               <a
                 href="#contact"
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 py-3 px-4 bg-nude-500 text-white text-center rounded-xl text-sm tracking-widest uppercase hover:bg-nude-600 transition-all"
+                className="mt-2 py-3 px-4 bg-rose-400 text-white text-center rounded-xl text-sm tracking-widest uppercase hover:bg-rose-500 transition-all"
               >
                 Prendre Rendez-vous
               </a>

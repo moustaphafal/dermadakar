@@ -1,5 +1,6 @@
 export { Hero } from './Hero'
 export { Doctor } from './Doctor'
+export { Reviews } from './Reviews'
 export { Cabinet } from './Cabinet'
 export { Services } from './Services'
 export { Gallery } from './Gallery'

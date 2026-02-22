@@ -198,7 +198,20 @@ export interface Page {
       | null;
     media?: (string | null) | Media;
   };
-  layout: (CallToActionBlock | ContentBlock | MediaBlock | ArchiveBlock | FormBlock)[];
+  layout: (
+    | CallToActionBlock
+    | ContentBlock
+    | MediaBlock
+    | ArchiveBlock
+    | FormBlock
+    | HeroBlockType
+    | DoctorBlockType
+    | ServicesBlockType
+    | CabinetBlockType
+    | ReviewsBlockType
+    | GalleryBlockType
+    | ContactBlockType
+  )[];
   meta?: {
     title?: string | null;
     /**
@@ -780,6 +793,164 @@ export interface Form {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "HeroBlockType".
+ */
+export interface HeroBlockType {
+  subtitle: string;
+  doctorName: string;
+  specialty: string;
+  description: string;
+  ctaLabel: string;
+  ctaLink: string;
+  secondaryLabel: string;
+  secondaryLink: string;
+  phone?: string | null;
+  location?: string | null;
+  hours?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'heroBlock';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "DoctorBlockType".
+ */
+export interface DoctorBlockType {
+  sectionSubtitle: string;
+  sectionTitle: string;
+  photo?: (string | null) | Media;
+  doctorName: string;
+  specialty: string;
+  biography?:
+    | {
+        paragraph: string;
+        id?: string | null;
+      }[]
+    | null;
+  qualificationsTitle: string;
+  qualifications?:
+    | {
+        label: string;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'doctorBlock';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ServicesBlockType".
+ */
+export interface ServicesBlockType {
+  sectionSubtitle: string;
+  sectionTitle: string;
+  sectionDescription?: string | null;
+  services?:
+    | {
+        title: string;
+        description: string;
+        details: string;
+        image?: (string | null) | Media;
+        id?: string | null;
+      }[]
+    | null;
+  ctaLabel?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'servicesBlock';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CabinetBlockType".
+ */
+export interface CabinetBlockType {
+  sectionSubtitle: string;
+  sectionTitle: string;
+  photos?:
+    | {
+        image?: (string | null) | Media;
+        caption?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  features?:
+    | {
+        title: string;
+        description: string;
+        icon?: ('sparkles' | 'shield' | 'smile' | 'heart' | 'building' | 'users') | null;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'cabinetBlock';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ReviewsBlockType".
+ */
+export interface ReviewsBlockType {
+  sectionSubtitle: string;
+  sectionTitle: string;
+  reviews?:
+    | {
+        name: string;
+        rating: number;
+        date: string;
+        text: string;
+        service: string;
+        id?: string | null;
+      }[]
+    | null;
+  ctaText?: string | null;
+  ctaLabel?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'reviewsBlock';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "GalleryBlockType".
+ */
+export interface GalleryBlockType {
+  sectionSubtitle: string;
+  sectionTitle: string;
+  images?:
+    | {
+        image?: (string | null) | Media;
+        label: string;
+        category: 'cabinet' | 'équipements';
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'galleryBlock';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ContactBlockType".
+ */
+export interface ContactBlockType {
+  sectionSubtitle: string;
+  sectionTitle: string;
+  address: string;
+  phone: string;
+  phone2?: string | null;
+  email: string;
+  hours: string;
+  hours2?: string | null;
+  ctaText: string;
+  ctaLabel: string;
+  ctaLink: string;
+  mapEmbedUrl: string;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'contactBlock';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "redirects".
  */
 export interface Redirect {
@@ -1086,6 +1257,13 @@ export interface PagesSelect<T extends boolean = true> {
         mediaBlock?: T | MediaBlockSelect<T>;
         archive?: T | ArchiveBlockSelect<T>;
         formBlock?: T | FormBlockSelect<T>;
+        heroBlock?: T | HeroBlockTypeSelect<T>;
+        doctorBlock?: T | DoctorBlockTypeSelect<T>;
+        servicesBlock?: T | ServicesBlockTypeSelect<T>;
+        cabinetBlock?: T | CabinetBlockTypeSelect<T>;
+        reviewsBlock?: T | ReviewsBlockTypeSelect<T>;
+        galleryBlock?: T | GalleryBlockTypeSelect<T>;
+        contactBlock?: T | ContactBlockTypeSelect<T>;
       };
   meta?:
     | T
@@ -1182,6 +1360,157 @@ export interface FormBlockSelect<T extends boolean = true> {
   form?: T;
   enableIntro?: T;
   introContent?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "HeroBlockType_select".
+ */
+export interface HeroBlockTypeSelect<T extends boolean = true> {
+  subtitle?: T;
+  doctorName?: T;
+  specialty?: T;
+  description?: T;
+  ctaLabel?: T;
+  ctaLink?: T;
+  secondaryLabel?: T;
+  secondaryLink?: T;
+  phone?: T;
+  location?: T;
+  hours?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "DoctorBlockType_select".
+ */
+export interface DoctorBlockTypeSelect<T extends boolean = true> {
+  sectionSubtitle?: T;
+  sectionTitle?: T;
+  photo?: T;
+  doctorName?: T;
+  specialty?: T;
+  biography?:
+    | T
+    | {
+        paragraph?: T;
+        id?: T;
+      };
+  qualificationsTitle?: T;
+  qualifications?:
+    | T
+    | {
+        label?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ServicesBlockType_select".
+ */
+export interface ServicesBlockTypeSelect<T extends boolean = true> {
+  sectionSubtitle?: T;
+  sectionTitle?: T;
+  sectionDescription?: T;
+  services?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        details?: T;
+        image?: T;
+        id?: T;
+      };
+  ctaLabel?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CabinetBlockType_select".
+ */
+export interface CabinetBlockTypeSelect<T extends boolean = true> {
+  sectionSubtitle?: T;
+  sectionTitle?: T;
+  photos?:
+    | T
+    | {
+        image?: T;
+        caption?: T;
+        id?: T;
+      };
+  features?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        icon?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ReviewsBlockType_select".
+ */
+export interface ReviewsBlockTypeSelect<T extends boolean = true> {
+  sectionSubtitle?: T;
+  sectionTitle?: T;
+  reviews?:
+    | T
+    | {
+        name?: T;
+        rating?: T;
+        date?: T;
+        text?: T;
+        service?: T;
+        id?: T;
+      };
+  ctaText?: T;
+  ctaLabel?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "GalleryBlockType_select".
+ */
+export interface GalleryBlockTypeSelect<T extends boolean = true> {
+  sectionSubtitle?: T;
+  sectionTitle?: T;
+  images?:
+    | T
+    | {
+        image?: T;
+        label?: T;
+        category?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ContactBlockType_select".
+ */
+export interface ContactBlockTypeSelect<T extends boolean = true> {
+  sectionSubtitle?: T;
+  sectionTitle?: T;
+  address?: T;
+  phone?: T;
+  phone2?: T;
+  email?: T;
+  hours?: T;
+  hours2?: T;
+  ctaText?: T;
+  ctaLabel?: T;
+  ctaLink?: T;
+  mapEmbedUrl?: T;
   id?: T;
   blockName?: T;
 }

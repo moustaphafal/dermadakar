@@ -1,73 +1,63 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 
 const services = [
   {
     title: 'Dermatologie Médicale',
     description:
       'Diagnostic et traitement de toutes les maladies de la peau : eczéma, psoriasis, acné, mycoses, allergies cutanées, infections...',
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-      </svg>
-    ),
+    image: '/services/dermatologie-medicale.jpg',
+    details:
+      'Notre expertise en dermatologie médicale couvre l\'ensemble des pathologies cutanées. Nous prenons en charge l\'eczéma, le psoriasis, l\'acné sous toutes ses formes, les mycoses cutanées et unguéales, les allergies de contact et alimentaires, les infections bactériennes et virales de la peau, ainsi que les maladies inflammatoires chroniques. Chaque patient bénéficie d\'un diagnostic précis et d\'un plan de traitement personnalisé.',
   },
   {
     title: 'Dermatologie Chirurgicale',
     description:
       'Exérèse de lésions cutanées, biopsies, chirurgie des tumeurs bénignes et malignes, cryothérapie, électrocoagulation.',
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M7.848 8.25l1.536.887M7.848 8.25a3 3 0 11-5.196-3 3 3 0 015.196 3zm1.536.887a2.165 2.165 0 011.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887m-1.536.887a3 3 0 11-5.196 3 3 3 0 015.196-3zm1.536-.887a2.165 2.165 0 001.083-1.838c.005-.352.054-.695.14-1.025m-1.223 2.863l2.077-1.199m0-3.328a4.323 4.323 0 012.068-1.379l5.325-1.628a4.5 4.5 0 012.48-.044l.803.215-7.794 4.5m-2.882-1.664A4.331 4.331 0 0010.607 12m3.736 0l7.794 4.5-.802.215a4.5 4.5 0 01-2.48-.043l-5.326-1.629a4.324 4.324 0 01-2.068-1.379M14.343 12l-2.882 1.664" />
-      </svg>
-    ),
+    image: '/services/dermatologie-chirurgicale.jpg',
+    details:
+      'Notre cabinet est équipé pour réaliser les interventions de dermatologie chirurgicale en toute sécurité. Nous pratiquons l\'exérèse de lésions cutanées suspectes ou gênantes, les biopsies diagnostiques, la chirurgie des tumeurs bénignes (kystes, lipomes) et malignes (carcinomes, mélanomes), la cryothérapie à l\'azote liquide et l\'électrocoagulation. Toutes les interventions sont réalisées sous anesthésie locale dans des conditions d\'asepsie strictes.',
   },
   {
     title: 'Dermatologie Esthétique',
     description:
       'Peelings, mésothérapie, traitement des taches pigmentaires, rajeunissement cutané, injections et soins anti-âge.',
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
-      </svg>
-    ),
+    image: '/services/dermatologie-esthetique.jpg',
+    details:
+      'Notre pôle esthétique propose des soins avancés pour sublimer votre peau. Peelings chimiques (superficiels, moyens et profonds), mésothérapie revitalisante, traitement ciblé des taches pigmentaires et du mélasma, rajeunissement cutané par micro-needling, injections d\'acide hyaluronique et de toxine botulique, PRP (plasma riche en plaquettes) et protocoles anti-âge personnalisés pour un résultat naturel et harmonieux.',
   },
   {
     title: 'Vénéréologie (IST)',
     description:
       'Dépistage, diagnostic et traitement des infections sexuellement transmissibles, suivi et conseil préventif.',
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-      </svg>
-    ),
+    image: '/services/venereologie.jpg',
+    details:
+      'Nous assurons une prise en charge complète et confidentielle des infections sexuellement transmissibles (IST). Dépistage systématique ou orienté, diagnostic clinique et biologique, traitement adapté selon les dernières recommandations, suivi post-thérapeutique et conseil préventif. Notre approche bienveillante garantit un accompagnement respectueux et sans jugement pour tous nos patients.',
   },
   {
     title: 'Traitement Laser',
     description:
       'Épilation laser, traitement des cicatrices, verrues, lésions vasculaires et pigmentaires avec des lasers de pointe.',
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-      </svg>
-    ),
+    image: '/services/traitement-laser.jpg',
+    details:
+      'Notre plateau technique laser de dernière génération permet de traiter un large éventail de pathologies et imperfections. Épilation laser longue durée pour tous types de peau, traitement des cicatrices d\'acné et chirurgicales, destruction des verrues résistantes, prise en charge des lésions vasculaires (couperose, angiomes) et pigmentaires (taches solaires, lentigos). Un protocole sur mesure est établi après une consultation d\'évaluation.',
   },
   {
     title: 'Dermatoscopie',
     description:
       'Examen dermoscopique des grains de beauté, surveillance des nævus, dépistage précoce du mélanome et des cancers cutanés.',
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-      </svg>
-    ),
+    image: '/services/dermatoscopie.jpg',
+    details:
+      'La dermatoscopie est un examen non invasif indispensable pour la surveillance de vos grains de beauté. Grâce à un dermoscope de haute précision, nous analysons la structure microscopique de chaque lésion pigmentée, assurons le suivi photographique des nævus atypiques, et réalisons le dépistage précoce du mélanome et des autres cancers cutanés. Un examen régulier est recommandé, en particulier pour les peaux à risque.',
   },
 ]
 
 export const Services: React.FC = () => {
+  const [selectedService, setSelectedService] = useState<number | null>(null)
+
   return (
-    <section id="services" className="py-24 bg-background">
+    <section id="services" className="py-24 bg-rose-50">
       <div className="container px-4">
         {/* Section title */}
         <div className="text-center mb-16">
@@ -76,9 +66,9 @@ export const Services: React.FC = () => {
             Les <span className="font-semibold">Services</span>
           </h2>
           <div className="flex items-center justify-center mt-6">
-            <div className="h-px w-12 bg-nude-300" />
-            <div className="w-2 h-2 bg-nude-500 rounded-full mx-3" />
-            <div className="h-px w-12 bg-nude-300" />
+            <div className="h-px w-12 bg-rose-200" />
+            <div className="w-2 h-2 bg-rose-400 rounded-full mx-3" />
+            <div className="h-px w-12 bg-rose-200" />
           </div>
           <p className="mt-6 text-nude-600 max-w-2xl mx-auto leading-relaxed">
             Une prise en charge complète de votre peau, alliant expertise médicale
@@ -87,33 +77,103 @@ export const Services: React.FC = () => {
         </div>
 
         {/* Services grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {services.map((service, index) => (
-            <div
+            <button
               key={index}
-              className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-nude-200/50"
+              onClick={() => setSelectedService(index)}
+              className="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer border-0 p-0 text-left w-full"
             >
-              <div className="w-14 h-14 bg-gradient-to-br from-nude-100 to-nude-200 rounded-xl flex items-center justify-center text-nude-600 mb-6 group-hover:from-nude-500 group-hover:to-nude-400 group-hover:text-white transition-all duration-500">
-                {service.icon}
+              {/* Image background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-nude-300 to-nude-500">
+                <div className="absolute inset-0 bg-gradient-to-br from-rose-300/40 to-nude-400/60" />
+                {/* Placeholder icon */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-20">
+                  <svg className="w-24 h-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={0.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z" />
+                  </svg>
+                </div>
               </div>
-              <h3 className="text-nude-800 font-semibold text-lg mb-3">{service.title}</h3>
-              <p className="text-nude-600 text-sm leading-relaxed">{service.description}</p>
-              <div className="mt-6 flex items-center text-nude-500 text-sm font-medium group-hover:text-nude-600 transition-colors">
-                <span>En savoir plus</span>
-                <svg
-                  className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+
+              {/* Dark overlay on hover */}
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-all duration-500" />
+
+              {/* Service name - always visible at bottom */}
+              <div className="absolute inset-x-0 bottom-0 p-6">
+                <div className="bg-white/90 backdrop-blur-sm rounded-xl px-5 py-3 group-hover:bg-white transition-all duration-300 shadow-lg">
+                  <h3 className="text-nude-800 font-semibold text-base">{service.title}</h3>
+                  <p className="text-nude-500 text-xs mt-1 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-20 transition-all duration-500 overflow-hidden">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+
+              {/* "+" indicator */}
+              <div className="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-md">
+                <svg className="w-5 h-5 text-rose-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                 </svg>
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </div>
+
+      {/* Popup / Modal */}
+      {selectedService !== null && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedService(null)}
+        >
+          {/* Backdrop */}
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm animate-[fadeIn_0.2s_ease]" />
+
+          {/* Modal content */}
+          <div
+            className="relative bg-white rounded-3xl max-w-lg w-full shadow-2xl overflow-hidden animate-[fadeInUp_0.3s_ease]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Image header */}
+            <div className="relative h-48 bg-gradient-to-br from-nude-300 to-nude-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-rose-300/40 to-nude-400/60" />
+              <div className="absolute inset-0 flex items-center justify-center opacity-20">
+                <svg className="w-20 h-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={0.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z" />
+                </svg>
+              </div>
+              {/* Close button */}
+              <button
+                onClick={() => setSelectedService(null)}
+                className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors shadow-md cursor-pointer"
+              >
+                <svg className="w-5 h-5 text-nude-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Text content */}
+            <div className="p-8">
+              <h3 className="text-2xl font-semibold text-nude-900 mb-4">
+                {services[selectedService].title}
+              </h3>
+              <p className="text-nude-600 leading-relaxed text-sm mb-6">
+                {services[selectedService].details}
+              </p>
+              <a
+                href="#contact"
+                onClick={() => setSelectedService(null)}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-rose-400 hover:bg-rose-500 text-white rounded-full text-sm font-medium tracking-wide transition-all duration-300 hover:shadow-lg hover:shadow-rose-400/25"
+              >
+                Prendre rendez-vous
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   )
 }

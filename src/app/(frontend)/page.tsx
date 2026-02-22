@@ -1,21 +1,38 @@
 import React from 'react'
-import { Hero } from '@/components/sections/Hero'
-import { Doctor } from '@/components/sections/Doctor'
-import { Cabinet } from '@/components/sections/Cabinet'
-import { Services } from '@/components/sections/Services'
-import { Gallery } from '@/components/sections/Gallery'
-import { Contact } from '@/components/sections/Contact'
+import { getPayload } from 'payload'
+import config from '@payload-config'
+import { RenderBlocks } from '@/blocks/RenderBlocks'
 import type { Metadata } from 'next'
 
-export default function HomePage() {
+export default async function HomePage() {
+  const payload = await getPayload({ config })
+
+  const { docs } = await payload.find({
+    collection: 'pages',
+    where: {
+      slug: { equals: 'home' },
+    },
+    limit: 1,
+    depth: 2,
+  })
+
+  const page = docs?.[0]
+
+  if (!page?.layout?.length) {
+    return (
+      <main>
+        <div className="min-h-screen flex items-center justify-center">
+          <p className="text-nude-600 text-lg">
+            Créez une page avec le slug &quot;home&quot; dans le panneau admin pour afficher le contenu.
+          </p>
+        </div>
+      </main>
+    )
+  }
+
   return (
     <main>
-      <Hero />
-      <Doctor />
-      <Cabinet />
-      <Services />
-      <Gallery />
-      <Contact />
+      <RenderBlocks blocks={page.layout} />
     </main>
   )
 }
