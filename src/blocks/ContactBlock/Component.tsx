@@ -24,7 +24,7 @@ export const ContactBlockComponent: React.FC<ContactBlockType> = ({
   const addressLines = (address || '').split('\n')
 
   return (
-    <section id="contact" className="py-24 bg-nude-400">
+    <section id="contact" className="py-24 bg-nude-300">
       <div className="container px-4">
         {/* Section title */}
         <div className="text-center mb-16">
@@ -42,7 +42,7 @@ export const ContactBlockComponent: React.FC<ContactBlockType> = ({
 
         <div className="max-w-5xl mx-auto">
           {/* Contact cards row */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+          <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-4 mb-12">
             {/* Address */}
             <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/30 transition-all duration-300 text-center">
               <div className="w-14 h-14 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -91,32 +91,15 @@ export const ContactBlockComponent: React.FC<ContactBlockType> = ({
               <h4 className="text-white font-semibold text-sm mb-1">Email</h4>
               <p className="text-white/80 text-sm">{email}</p>
             </div>
-
-            {/* Hours */}
-            <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/30 transition-all duration-300 text-center">
-              <div className="w-14 h-14 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h4 className="text-white font-semibold text-sm mb-1">Horaires</h4>
-              <p className="text-white/80 text-sm">
-                {hours}
-                {hours2 && (
-                  <>
-                    <br />
-                    {hours2}
-                  </>
-                )}
-              </p>
-            </div>
           </div>
 
           {/* CTA Button */}
           <div className="text-center mb-12">
             <p className="text-white/80 text-lg mb-6">{ctaText}</p>
             <a
-              href={ctaLink || 'tel:+221XXXXXXXX'}
+              href={ctaLink || 'https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui'}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white text-nude-700 rounded-full text-sm tracking-widest uppercase font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-white/20 hover:scale-105 active:scale-95"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

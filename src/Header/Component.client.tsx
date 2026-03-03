@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
 import type { Header } from '@/payload-types'
+import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 
 const navLinks = [
   { label: 'Accueil', href: '#accueil' },
@@ -82,11 +83,14 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
               </a>
             ))}
             <a
-              href="#contact"
+              href="https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`ml-2 px-6 py-2.5 rounded-full text-xs tracking-widest uppercase transition-all duration-300 bg-rose-400 text-white hover:bg-rose-500 shadow-md shadow-rose-400/20`}
             >
               Rendez-vous
             </a>
+            <LanguageSwitcher />
           </nav>
 
           {/* Mobile menu button */}
@@ -130,12 +134,17 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
                 </a>
               ))}
               <a
-                href="#contact"
+                href="https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 py-3 px-4 bg-rose-400 text-white text-center rounded-xl text-sm tracking-widest uppercase hover:bg-rose-500 transition-all"
               >
                 Prendre Rendez-vous
               </a>
+              <div className="mt-3 flex justify-center">
+                <LanguageSwitcher />
+              </div>
             </nav>
           </div>
         </div>

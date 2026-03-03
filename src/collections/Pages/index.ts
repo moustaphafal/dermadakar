@@ -66,6 +66,7 @@ export const Pages: CollectionConfig<'pages'> = {
       name: 'title',
       type: 'text',
       required: true,
+      localized: true,
     },
     {
       type: 'tabs',
@@ -81,6 +82,7 @@ export const Pages: CollectionConfig<'pages'> = {
               type: 'blocks',
               blocks: [CallToAction, Content, MediaBlock, Archive, FormBlock, HeroBlock, DoctorBlock, ServicesBlock, CabinetBlock, ReviewsBlock, GalleryBlock, ContactBlock],
               required: true,
+              localized: true,
               admin: {
                 initCollapsed: true,
               },

@@ -3,6 +3,8 @@ import sharp from 'sharp'
 import path from 'path'
 import { buildConfig, PayloadRequest } from 'payload'
 import { fileURLToPath } from 'url'
+import { fr } from '@payloadcms/translations/languages/fr'
+import { en } from '@payloadcms/translations/languages/en'
 
 import { Categories } from './collections/Categories'
 import { Media } from './collections/Media'
@@ -54,6 +56,17 @@ export default buildConfig({
         },
       ],
     },
+  },
+  i18n: {
+    supportedLanguages: { en, fr },
+  },
+  localization: {
+    locales: [
+      { code: 'fr', label: 'French' },
+      { code: 'en', label: 'English' },
+    ],
+    defaultLocale: 'fr',
+    fallback: true,
   },
   // This config helps us configure global or default features that the other editors can inherit
   editor: defaultLexical,

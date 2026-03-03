@@ -84,7 +84,9 @@ export const HeroBlockComponent: React.FC<HeroBlockType> = ({
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-up animate-delay-500">
           <a
-            href={ctaLink || '#contact'}
+            href={ctaLink || 'https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui'}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center justify-center px-8 py-4 bg-rose-400 hover:bg-rose-500 text-white rounded-full text-sm tracking-widest uppercase transition-all duration-300 hover:shadow-lg hover:shadow-rose-400/30 hover:scale-105 active:scale-95"
           >
             <span className="group-hover:tracking-[0.2em] transition-all duration-300">

@@ -12,6 +12,7 @@ export const ServicesBlock: Block = {
       name: 'sectionSubtitle',
       type: 'text',
       required: true,
+      localized: true,
       defaultValue: 'Nos expertises',
       label: 'Sous-titre de section',
     },
@@ -19,12 +20,14 @@ export const ServicesBlock: Block = {
       name: 'sectionTitle',
       type: 'text',
       required: true,
+      localized: true,
       defaultValue: 'Les Services',
       label: 'Titre de section',
     },
     {
       name: 'sectionDescription',
       type: 'textarea',
+      localized: true,
       defaultValue:
         'Une prise en charge complète de votre peau, alliant expertise médicale et technologies de pointe pour des résultats optimaux.',
       label: 'Description de section',
@@ -39,18 +42,21 @@ export const ServicesBlock: Block = {
           name: 'title',
           type: 'text',
           required: true,
+          localized: true,
           label: 'Titre',
         },
         {
           name: 'description',
           type: 'textarea',
           required: true,
+          localized: true,
           label: 'Description courte',
         },
         {
           name: 'details',
           type: 'textarea',
           required: true,
+          localized: true,
           label: 'Description détaillée (popup)',
         },
         {
@@ -108,6 +114,7 @@ export const ServicesBlock: Block = {
     {
       name: 'ctaLabel',
       type: 'text',
+      localized: true,
       defaultValue: 'Prendre rendez-vous',
       label: 'Texte du bouton CTA (popup)',
     },

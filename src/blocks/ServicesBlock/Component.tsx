@@ -169,7 +169,9 @@ export const ServicesBlockComponent: React.FC<ServicesBlockType> = ({
                 {services[selectedService].details}
               </p>
               <a
-                href="#contact"
+                href="https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setSelectedService(null)}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-rose-400 hover:bg-rose-500 text-white rounded-full text-sm font-medium tracking-wide transition-all duration-300 hover:shadow-lg hover:shadow-rose-400/25"
               >

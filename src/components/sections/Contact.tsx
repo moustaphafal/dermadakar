@@ -86,7 +86,9 @@ export const Contact: React.FC = () => {
               Prenez soin de votre peau, prenez rendez-vous dès maintenant.
             </p>
             <a
-              href="tel:+221XXXXXXXX"
+              href="https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white text-nude-700 rounded-full text-sm tracking-widest uppercase font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-white/20 hover:scale-105 active:scale-95"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

@@ -12,6 +12,7 @@ export const GalleryBlock: Block = {
       name: 'sectionSubtitle',
       type: 'text',
       required: true,
+      localized: true,
       defaultValue: 'Notre galerie',
       label: 'Sous-titre de section',
     },
@@ -19,6 +20,7 @@ export const GalleryBlock: Block = {
       name: 'sectionTitle',
       type: 'text',
       required: true,
+      localized: true,
       defaultValue: 'Les Photos',
       label: 'Titre de section',
     },
@@ -38,6 +40,7 @@ export const GalleryBlock: Block = {
           name: 'label',
           type: 'text',
           required: true,
+          localized: true,
           label: 'Légende',
         },
         {

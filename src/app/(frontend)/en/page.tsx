@@ -4,7 +4,7 @@ import config from '@payload-config'
 import { RenderBlocks } from '@/blocks/RenderBlocks'
 import type { Metadata } from 'next'
 
-export default async function HomePage() {
+export default async function HomePageEN() {
   const payload = await getPayload({ config })
 
   const { docs } = await payload.find({
@@ -12,7 +12,7 @@ export default async function HomePage() {
     where: {
       slug: { equals: 'accueil' },
     },
-    locale: 'fr',
+    locale: 'en',
     limit: 1,
     depth: 2,
   })
@@ -24,7 +24,7 @@ export default async function HomePage() {
       <main>
         <div className="min-h-screen flex items-center justify-center">
           <p className="text-nude-600 text-lg">
-            Créez une page avec le slug &quot;accueil&quot; dans le panneau admin pour afficher le contenu.
+            Run <code className="font-mono">pnpm seed:en</code> to populate English content.
           </p>
         </div>
       </main>
@@ -39,22 +39,20 @@ export default async function HomePage() {
 }
 
 export const metadata: Metadata = {
-  title: 'DermaDakar — Cabinet de Dermatologie à Dakar',
+  title: 'DermaDakar — Dermatology Clinic in Dakar',
   description:
-    'Cabinet de dermatologie à Dakar, Sénégal. Spécialiste en dermatologie médicale, chirurgicale et esthétique. Prenez rendez-vous avec notre dermatologue.',
+    'Dermatology clinic in Dakar, Senegal. Medical, surgical and aesthetic dermatology specialist.',
   keywords: [
-    'dermatologue dakar',
-    'dermatologie dakar',
-    'cabinet dermatologie sénégal',
-    'dermatologue sénégal',
-    'soins peau dakar',
-    'dermatologie esthétique dakar',
+    'dermatologist dakar',
+    'dermatology dakar',
+    'dermatology clinic senegal',
+    'skin care dakar',
+    'aesthetic dermatology dakar',
   ],
   openGraph: {
-    title: 'DermaDakar — Cabinet de Dermatologie à Dakar',
-    description:
-      'Spécialiste en dermatologie médicale, chirurgicale et esthétique à Dakar, Sénégal.',
+    title: 'DermaDakar — Dermatology Clinic in Dakar',
+    description: 'Specialist in medical, surgical and aesthetic dermatology in Dakar, Senegal.',
     type: 'website',
-    locale: 'fr_FR',
+    locale: 'en_US',
   },
 }

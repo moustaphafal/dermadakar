@@ -12,6 +12,7 @@ export const CabinetBlock: Block = {
       name: 'sectionSubtitle',
       type: 'text',
       required: true,
+      localized: true,
       defaultValue: 'Notre espace',
       label: 'Sous-titre de section',
     },
@@ -19,6 +20,7 @@ export const CabinetBlock: Block = {
       name: 'sectionTitle',
       type: 'text',
       required: true,
+      localized: true,
       defaultValue: 'Le Cabinet',
       label: 'Titre de section',
     },
@@ -38,6 +40,7 @@ export const CabinetBlock: Block = {
         {
           name: 'caption',
           type: 'text',
+          localized: true,
           label: 'Légende',
         },
       ],
@@ -57,12 +60,14 @@ export const CabinetBlock: Block = {
           name: 'title',
           type: 'text',
           required: true,
+          localized: true,
           label: 'Titre',
         },
         {
           name: 'description',
           type: 'textarea',
           required: true,
+          localized: true,
           label: 'Description',
         },
         {
