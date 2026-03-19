@@ -9,7 +9,8 @@ import { FormBlock } from '@/blocks/Form/Component'
 import { MediaBlock } from '@/blocks/MediaBlock/Component'
 import { HeroBlockComponent } from '@/blocks/HeroBlock/Component'
 import { DoctorBlockComponent } from '@/blocks/DoctorBlock/Component'
-import { ServicesBlockComponent } from '@/blocks/ServicesBlock/Component'
+import { TraitementBlockComponent } from '@/blocks/TraitementBlock/Component'
+import { SpecialiteBlockComponent } from '@/blocks/SpecialiteBlock/Component'
 import { CabinetBlockComponent } from '@/blocks/CabinetBlock/Component'
 import { ReviewsBlockComponent } from '@/blocks/ReviewsBlock/Component'
 import { GalleryBlockComponent } from '@/blocks/GalleryBlock/Component'
@@ -23,7 +24,8 @@ const blockComponents = {
   mediaBlock: MediaBlock,
   heroBlock: HeroBlockComponent,
   doctorBlock: DoctorBlockComponent,
-  servicesBlock: ServicesBlockComponent,
+  traitementBlock: TraitementBlockComponent,
+  specialiteBlock: SpecialiteBlockComponent,
   cabinetBlock: CabinetBlockComponent,
   reviewsBlock: ReviewsBlockComponent,
   galleryBlock: GalleryBlockComponent,
@@ -51,7 +53,8 @@ export const RenderBlocks: React.FC<{
               const isFullWidthBlock = [
                 'heroBlock',
                 'doctorBlock',
-                'servicesBlock',
+                'traitementBlock',
+                'specialiteBlock',
                 'cabinetBlock',
                 'reviewsBlock',
                 'galleryBlock',

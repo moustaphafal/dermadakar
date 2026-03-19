@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useState } from 'react'
-import type { ServicesBlockType, Media } from '@/payload-types'
+import type { TraitementBlockType, Media } from '@/payload-types'
 
-export const ServicesBlockComponent: React.FC<ServicesBlockType> = ({
+export const TraitementBlockComponent: React.FC<TraitementBlockType> = ({
   sectionSubtitle,
   sectionTitle,
   sectionDescription,
@@ -17,14 +17,13 @@ export const ServicesBlockComponent: React.FC<ServicesBlockType> = ({
   const titleBold = titleParts[titleParts.length - 1]
 
   return (
-    <section id="services" className="py-24 bg-rose-50">
+    <section id="traitements" className="py-24 bg-rose-50">
       <div className="container px-4">
         {/* Section title */}
         <div className="text-center mb-16">
           <p className="text-nude-500 text-sm tracking-[0.3em] uppercase mb-3">{sectionSubtitle}</p>
           <h2 className="text-3xl md:text-5xl font-light text-nude-900">
-            {titlePrefix}{' '}
-            <span className="font-semibold">{titleBold}</span>
+            {titlePrefix} <span className="font-semibold">{titleBold}</span>
           </h2>
           <div className="flex items-center justify-center mt-6">
             <div className="h-px w-12 bg-rose-200" />
@@ -123,7 +122,11 @@ export const ServicesBlockComponent: React.FC<ServicesBlockType> = ({
               {(() => {
                 const img = services[selectedService].image as Media | null | undefined
                 return img?.url ? (
-                  <img src={img.url} alt={services[selectedService].title} className="w-full h-full object-cover" />
+                  <img
+                    src={img.url}
+                    alt={services[selectedService].title}
+                    className="w-full h-full object-cover"
+                  />
                 ) : (
                   <>
                     <div className="absolute inset-0 bg-gradient-to-br from-rose-300/40 to-nude-400/60" />

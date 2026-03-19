@@ -60,9 +60,75 @@ const frLayout = [
     ],
   },
   {
-    blockType: 'servicesBlock',
-    sectionSubtitle: 'Nos expertises',
-    sectionTitle: 'Les Services',
+    blockType: 'specialiteBlock',
+    sectionSubtitle: 'Nos domaines',
+    sectionTitle: 'Nos Spécialités',
+    sectionDescription:
+      "Des domaines d'expertise complémentaires pour une prise en charge globale de la santé de votre peau.",
+    specialites: [
+      {
+        title: 'Dermatologie adulte et pédiatrique',
+        description:
+          "Prise en charge des maladies de la peau, des cheveux et des ongles chez l'adulte et l'enfant.",
+        details: [
+          {
+            label: 'Peau',
+            value: 'Affections cutanées courantes : eczéma, psoriasis, acné, taches pigmentaires.',
+          },
+          {
+            label: 'Ongles',
+            value:
+              'Affections unguéales : onychomycose, lichen unguéal, troubles de la croissance.',
+          },
+          {
+            label: 'Cheveux',
+            value: 'Affections du cuir chevelu : chute de cheveux, teignes, alopécies.',
+          },
+        ],
+        icon: 'dermatologie',
+      },
+      {
+        title: 'Vénérologie',
+        description:
+          'Diagnostic, traitement et prévention des infections sexuellement transmissibles (IST).',
+        details: [
+          {
+            label: 'Services',
+            value: 'Dépistage, prise en charge médicale, conseils de prévention et suivi.',
+          },
+        ],
+        icon: 'venerologie',
+      },
+      {
+        title: 'Médecine esthétique',
+        description: "Amélioration de l'apparence de la peau et du visage sans chirurgie.",
+        details: [
+          {
+            label: 'Techniques',
+            value: 'Peelings, injections, rajeunissement cutané, traitements de texture et taches.',
+          },
+        ],
+        icon: 'esthetique',
+      },
+      {
+        title: 'Lasers',
+        description:
+          'Traitements par laser pour améliorer la qualité de la peau et corriger imperfections.',
+        details: [
+          {
+            label: 'Indications',
+            value:
+              'Traitement des cicatrices, détatouage, imperfections pigmentaires, resurfaçage.',
+          },
+        ],
+        icon: 'laser',
+      },
+    ],
+  },
+  {
+    blockType: 'traitementBlock',
+    sectionSubtitle: 'Nos traitements',
+    sectionTitle: 'Les Traitements',
     sectionDescription:
       'Une prise en charge complète de votre peau, alliant expertise médicale et technologies de pointe pour des résultats optimaux.',
     services: [
@@ -271,9 +337,64 @@ const enLayout = [
     ],
   },
   {
-    blockType: 'servicesBlock',
+    blockType: 'specialiteBlock',
+    sectionSubtitle: 'Our fields',
+    sectionTitle: 'Our Specialties',
+    sectionDescription: 'Complementary areas of expertise for comprehensive skin health care.',
+    specialites: [
+      {
+        title: 'Adult and Pediatric Dermatology',
+        description: 'Care for diseases of the skin, hair and nails in adults and children.',
+        details: [
+          {
+            label: 'Skin',
+            value: 'Common skin conditions: eczema, psoriasis, acne, pigmentation spots.',
+          },
+          {
+            label: 'Nails',
+            value: 'Nail disorders: onychomycosis, nail lichen, growth disorders.',
+          },
+          { label: 'Hair', value: 'Scalp conditions: hair loss, ringworm, alopecia.' },
+        ],
+        icon: 'dermatologie',
+      },
+      {
+        title: 'Venereology',
+        description:
+          'Diagnosis, treatment and prevention of sexually transmitted infections (STIs).',
+        details: [
+          { label: 'Services', value: 'Screening, medical care, prevention advice and follow-up.' },
+        ],
+        icon: 'venerologie',
+      },
+      {
+        title: 'Aesthetic Medicine',
+        description: 'Improving the appearance of skin and face without surgery.',
+        details: [
+          {
+            label: 'Techniques',
+            value: 'Peels, injections, skin rejuvenation, texture and spot treatments.',
+          },
+        ],
+        icon: 'esthetique',
+      },
+      {
+        title: 'Lasers',
+        description: 'Laser treatments to improve skin quality and correct imperfections.',
+        details: [
+          {
+            label: 'Indications',
+            value: 'Scar treatment, tattoo removal, pigment imperfections, resurfacing.',
+          },
+        ],
+        icon: 'laser',
+      },
+    ],
+  },
+  {
+    blockType: 'traitementBlock',
     sectionSubtitle: 'Our expertise',
-    sectionTitle: 'Our Services',
+    sectionTitle: 'Our Treatments',
     sectionDescription:
       'Comprehensive skin care combining medical expertise and cutting-edge technology for optimal results.',
     services: [
@@ -345,8 +466,7 @@ const enLayout = [
       },
       {
         title: 'Warm Welcome',
-        description:
-          'A caring and attentive team accompanies you throughout your care journey.',
+        description: 'A caring and attentive team accompanies you throughout your care journey.',
         icon: 'smile',
       },
     ],
@@ -446,10 +566,7 @@ const seedEnglish = async () => {
   let { docs } = await payload.find({
     collection: 'pages',
     where: {
-      or: [
-        { slug: { equals: 'accueil' } },
-        { slug: { equals: 'home' } },
-      ],
+      or: [{ slug: { equals: 'accueil' } }, { slug: { equals: 'home' } }],
     },
     locale: 'fr',
     limit: 1,
@@ -475,7 +592,9 @@ const seedEnglish = async () => {
     process.exit(1)
   }
 
-  payload.logger.info(`Found page (id: ${page.id}, slug: ${(page as any).slug}). Seeding content...`)
+  payload.logger.info(
+    `Found page (id: ${page.id}, slug: ${(page as any).slug}). Seeding content...`,
+  )
 
   // ── Step 1: Seed FR layout blocks ─────────────────────────────────────────
   payload.logger.info('Step 1/2: Updating French layout blocks...')

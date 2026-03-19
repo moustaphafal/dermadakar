@@ -9,7 +9,7 @@ const getPagesSitemap = unstable_cache(
     const SITE_URL =
       process.env.NEXT_PUBLIC_SERVER_URL ||
       process.env.VERCEL_PROJECT_PRODUCTION_URL ||
-      'https://example.com'
+      'https://dermadakar.com'
 
     const results = await payload.find({
       collection: 'pages',
@@ -45,11 +45,16 @@ const getPagesSitemap = unstable_cache(
     const sitemap = results.docs
       ? results.docs
           .filter((page) => Boolean(page?.slug))
-          .map((page) => {
-            return {
-              loc: page?.slug === 'home' ? `${SITE_URL}/` : `${SITE_URL}/${page?.slug}`,
-              lastmod: page.updatedAt || dateFallback,
-            }
+          .flatMap((page) => {
+            const isHome = page?.slug === 'accueil' || page?.slug === 'home'
+            const frUrl = isHome ? `${SITE_URL}/` : `${SITE_URL}/${page?.slug}`
+            const enUrl = isHome ? `${SITE_URL}/en` : `${SITE_URL}/en/${page?.slug}`
+            const lastmod = page.updatedAt || dateFallback
+
+            return [
+              { loc: frUrl, lastmod },
+              { loc: enUrl, lastmod },
+            ]
           })
       : []
 

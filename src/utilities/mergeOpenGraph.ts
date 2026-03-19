@@ -3,14 +3,19 @@ import { getServerSideURL } from './getURL'
 
 const defaultOpenGraph: Metadata['openGraph'] = {
   type: 'website',
-  description: 'An open-source website built with Payload and Next.js.',
+  description:
+    'Cabinet de dermatologie à Dakar, Sénégal. Spécialiste en dermatologie médicale, chirurgicale et esthétique. Dermatologue, vénérologue, médecine esthétique et laser.',
   images: [
     {
-      url: `${getServerSideURL()}/website-template-OG.webp`,
+      url: `${getServerSideURL()}/og-dermadakar.webp`,
+      width: 1200,
+      height: 630,
+      alt: 'DermaDakar — Cabinet de Dermatologie à Dakar',
     },
   ],
-  siteName: 'Payload Website Template',
-  title: 'Payload Website Template',
+  siteName: 'DermaDakar',
+  title: 'DermaDakar — Cabinet de Dermatologie à Dakar',
+  locale: 'fr_FR',
 }
 
 export const mergeOpenGraph = (og?: Metadata['openGraph']): Metadata['openGraph'] => {

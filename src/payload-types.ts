@@ -206,7 +206,8 @@ export interface Page {
     | FormBlock
     | HeroBlockType
     | DoctorBlockType
-    | ServicesBlockType
+    | SpecialiteBlockType
+    | TraitementBlockType
     | CabinetBlockType
     | ReviewsBlockType
     | GalleryBlockType
@@ -840,9 +841,36 @@ export interface DoctorBlockType {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "ServicesBlockType".
+ * via the `definition` "SpecialiteBlockType".
  */
-export interface ServicesBlockType {
+export interface SpecialiteBlockType {
+  sectionSubtitle: string;
+  sectionTitle: string;
+  sectionDescription?: string | null;
+  specialites?:
+    | {
+        title: string;
+        description: string;
+        details?:
+          | {
+              label: string;
+              value: string;
+              id?: string | null;
+            }[]
+          | null;
+        icon?: ('dermatologie' | 'venerologie' | 'esthetique' | 'laser') | null;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'specialiteBlock';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TraitementBlockType".
+ */
+export interface TraitementBlockType {
   sectionSubtitle: string;
   sectionTitle: string;
   sectionDescription?: string | null;
@@ -858,7 +886,7 @@ export interface ServicesBlockType {
   ctaLabel?: string | null;
   id?: string | null;
   blockName?: string | null;
-  blockType: 'servicesBlock';
+  blockType: 'traitementBlock';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -1259,7 +1287,8 @@ export interface PagesSelect<T extends boolean = true> {
         formBlock?: T | FormBlockSelect<T>;
         heroBlock?: T | HeroBlockTypeSelect<T>;
         doctorBlock?: T | DoctorBlockTypeSelect<T>;
-        servicesBlock?: T | ServicesBlockTypeSelect<T>;
+        specialiteBlock?: T | SpecialiteBlockTypeSelect<T>;
+        traitementBlock?: T | TraitementBlockTypeSelect<T>;
         cabinetBlock?: T | CabinetBlockTypeSelect<T>;
         reviewsBlock?: T | ReviewsBlockTypeSelect<T>;
         galleryBlock?: T | GalleryBlockTypeSelect<T>;
@@ -1410,9 +1439,35 @@ export interface DoctorBlockTypeSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "ServicesBlockType_select".
+ * via the `definition` "SpecialiteBlockType_select".
  */
-export interface ServicesBlockTypeSelect<T extends boolean = true> {
+export interface SpecialiteBlockTypeSelect<T extends boolean = true> {
+  sectionSubtitle?: T;
+  sectionTitle?: T;
+  sectionDescription?: T;
+  specialites?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        details?:
+          | T
+          | {
+              label?: T;
+              value?: T;
+              id?: T;
+            };
+        icon?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TraitementBlockType_select".
+ */
+export interface TraitementBlockTypeSelect<T extends boolean = true> {
   sectionSubtitle?: T;
   sectionTitle?: T;
   sectionDescription?: T;

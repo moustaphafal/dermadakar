@@ -1,11 +1,11 @@
 import type { Block } from 'payload'
 
-export const ServicesBlock: Block = {
-  slug: 'servicesBlock',
-  interfaceName: 'ServicesBlockType',
+export const TraitementBlock: Block = {
+  slug: 'traitementBlock',
+  interfaceName: 'TraitementBlockType',
   labels: {
-    singular: 'Services',
-    plural: 'Services',
+    singular: 'Traitement',
+    plural: 'Traitements',
   },
   fields: [
     {
@@ -13,7 +13,7 @@ export const ServicesBlock: Block = {
       type: 'text',
       required: true,
       localized: true,
-      defaultValue: 'Nos expertises',
+      defaultValue: 'Nos traitements',
       label: 'Sous-titre de section',
     },
     {
@@ -21,7 +21,7 @@ export const ServicesBlock: Block = {
       type: 'text',
       required: true,
       localized: true,
-      defaultValue: 'Les Services',
+      defaultValue: 'Les Traitements',
       label: 'Titre de section',
     },
     {

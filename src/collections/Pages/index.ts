@@ -9,7 +9,8 @@ import { FormBlock } from '../../blocks/Form/config'
 import { MediaBlock } from '../../blocks/MediaBlock/config'
 import { HeroBlock } from '../../blocks/HeroBlock/config'
 import { DoctorBlock } from '../../blocks/DoctorBlock/config'
-import { ServicesBlock } from '../../blocks/ServicesBlock/config'
+import { TraitementBlock } from '../../blocks/TraitementBlock/config'
+import { SpecialiteBlock } from '../../blocks/SpecialiteBlock/config'
 import { CabinetBlock } from '../../blocks/CabinetBlock/config'
 import { ReviewsBlock } from '../../blocks/ReviewsBlock/config'
 import { GalleryBlock } from '../../blocks/GalleryBlock/config'
@@ -80,7 +81,21 @@ export const Pages: CollectionConfig<'pages'> = {
             {
               name: 'layout',
               type: 'blocks',
-              blocks: [CallToAction, Content, MediaBlock, Archive, FormBlock, HeroBlock, DoctorBlock, ServicesBlock, CabinetBlock, ReviewsBlock, GalleryBlock, ContactBlock],
+              blocks: [
+                CallToAction,
+                Content,
+                MediaBlock,
+                Archive,
+                FormBlock,
+                HeroBlock,
+                DoctorBlock,
+                SpecialiteBlock,
+                TraitementBlock,
+                CabinetBlock,
+                ReviewsBlock,
+                GalleryBlock,
+                ContactBlock,
+              ],
               required: true,
               localized: true,
               admin: {
