@@ -70,7 +70,7 @@ export const TraitementBlock: Block = {
         {
           title: 'Acide Hyaluronique — Comblement & Volume',
           description:
-            "Restauration du volume du visage, lissage des rides et hydratation profonde grâce à des injections d'acide hyaluronique.",
+            "Restauration du volume du visage, lissage   des rides et hydratation profonde grâce à des injections d'acide hyaluronique.",
           details:
             "L'acide hyaluronique est une substance naturellement présente dans la peau. En médecine esthétique, elle est injectée pour restaurer le volume du visage (joues, tempes, lèvres), lisser les rides et plis (rides nasogéniennes, sillons), redessiner les contours du visage ou des lèvres et hydrater en profondeur grâce à sa capacité à retenir l'eau. C'est une technique non chirurgicale, rapide, réversible et adaptée à chaque patient pour un résultat naturel.",
         },
