@@ -2018,6 +2018,11 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
  */
 export interface Header {
   id: string;
+  /**
+   * Logo affiché dans le header et le footer. Recommandé : PNG/SVG transparent.
+   */
+  logo?: (string | null) | Media;
+  siteName?: string | null;
   navLinks?:
     | {
         label: string;
@@ -2062,6 +2067,8 @@ export interface Footer {
  * via the `definition` "header_select".
  */
 export interface HeaderSelect<T extends boolean = true> {
+  logo?: T;
+  siteName?: T;
   navLinks?:
     | T
     | {

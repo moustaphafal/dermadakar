@@ -2,22 +2,26 @@ import { getCachedGlobal } from '@/utilities/getGlobals'
 import Link from 'next/link'
 import React from 'react'
 
-import type { Footer } from '@/payload-types'
+import type { Footer, Header, Media } from '@/payload-types'
 
 export async function Footer() {
   const footerData: Footer = await getCachedGlobal('footer', 1)()
+  const headerData: Header = await getCachedGlobal('header', 2)()
 
   const navLinks = footerData?.navLinks ?? []
   const description =
     footerData?.description ??
-    'Cabinet de dermatologie \u00e0 Dakar, sp\u00e9cialis\u00e9 en dermatologie m\u00e9dicale, chirurgicale et esth\u00e9tique. Votre peau m\u00e9rite le meilleur.'
-  const address = footerData?.address ?? 'Rue X, Quartier Y, Dakar, S\u00e9n\u00e9gal'
+    'Cabinet de dermatologie à Dakar, spécialisé en dermatologie médicale, chirurgicale et esthétique. Votre peau mérite le meilleur.'
+  const address = footerData?.address ?? 'Rue X, Quartier Y, Dakar, Sénégal'
   const phone = footerData?.phone ?? '+221 XX XXX XX XX'
   const email = footerData?.email ?? 'contact@dermadakar.com'
   const hours = footerData?.hours ?? 'Lun - Ven : 9h - 18h | Sam : 9h - 13h'
   const facebookUrl = footerData?.socialMedia?.facebook ?? '#'
   const instagramUrl = footerData?.socialMedia?.instagram ?? '#'
   const linkedinUrl = footerData?.socialMedia?.linkedin ?? '#'
+
+  const siteName = headerData?.siteName ?? 'DermaDakar'
+  const logo = typeof headerData?.logo === 'object' ? headerData.logo : null
 
   return (
     <footer className="bg-rose-50 text-nude-800">
@@ -29,12 +33,14 @@ export async function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-3 mb-6 group">
-              <div className="w-10 h-10 bg-rose-400 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">D</span>
-              </div>
-              <span className="text-xl font-light tracking-wider text-nude-900">
-                Derma<span className="font-semibold">Dakar</span>
-              </span>
+              {logo?.url ? (
+                <img src={logo.url} alt={logo.alt || siteName} className="h-10 w-auto" />
+              ) : (
+                <div className="w-10 h-10 bg-rose-400 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">{siteName.charAt(0)}</span>
+                </div>
+              )}
+              <span className="text-xl font-light tracking-wider text-nude-900">{siteName}</span>
             </Link>
             <p className="text-nude-500 text-sm leading-relaxed mb-6">{description}</p>
             {/* Social links */}
@@ -173,7 +179,7 @@ export async function Footer() {
         <div className="container px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 max-w-6xl mx-auto">
             <p className="text-nude-500 text-xs">
-              © {new Date().getFullYear()} DermaDakar. Tous droits réservés.
+              © {new Date().getFullYear()} {siteName}. Tous droits réservés.
             </p>
             <p className="text-nude-500 text-xs">Cabinet de Dermatologie — Dakar, Sénégal</p>
           </div>

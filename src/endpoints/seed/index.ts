@@ -221,10 +221,14 @@ export const seed = async ({
     payload.updateGlobal({
       slug: 'header',
       data: {
+        siteName: 'DermaDakar',
         navLinks: [
           { label: 'Accueil', href: '#accueil' },
+          { label: 'Avis', href: '#avis' },
           { label: 'Le Docteur', href: '#docteur' },
+          { label: 'Le Cabinet', href: '#cabinet' },
           { label: 'Services', href: '#services' },
+          { label: 'Photos', href: '#photos' },
           { label: 'Contact', href: '#contact' },
         ],
         ctaLabel: 'Rendez-vous',

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
-import type { Header } from '@/payload-types'
+import type { Header, Media } from '@/payload-types'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 
 interface HeaderClientProps {
@@ -40,6 +40,8 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
   const ctaLabel = data?.ctaLabel ?? 'Rendez-vous'
   const ctaLink =
     data?.ctaLink ?? 'https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui'
+  const siteName = data?.siteName ?? 'DermaDakar'
+  const logo = typeof data?.logo === 'object' ? data.logo : null
 
   const isHomepage = pathname === '/'
 
@@ -56,16 +58,20 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
         <div className="container px-4 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div
-              className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-rose-400`}
-            >
-              <span className="text-white font-bold text-lg">D</span>
-            </div>
+            {logo?.url ? (
+              <img src={logo.url} alt={logo.alt || siteName} className="h-10 w-auto" />
+            ) : (
+              <div
+                className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-rose-400`}
+              >
+                <span className="text-white font-bold text-lg">{siteName.charAt(0)}</span>
+              </div>
+            )}
             <div>
               <span
                 className={`text-xl font-light tracking-wider transition-colors duration-300 text-white`}
               >
-                Derma<span className="font-semibold">Dakar</span>
+                {siteName}
               </span>
             </div>
           </Link>
