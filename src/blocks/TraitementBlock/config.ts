@@ -68,46 +68,116 @@ export const TraitementBlock: Block = {
       ],
       defaultValue: [
         {
-          title: 'Dermatologie Médicale',
+          title: 'Acide Hyaluronique — Comblement & Volume',
           description:
-            'Diagnostic et traitement de toutes les maladies de la peau : eczéma, psoriasis, acné, mycoses, allergies cutanées, infections...',
+            "Restauration du volume du visage, lissage des rides et hydratation profonde grâce à des injections d'acide hyaluronique.",
           details:
-            "Notre expertise en dermatologie médicale couvre l'ensemble des pathologies cutanées. Nous prenons en charge l'eczéma, le psoriasis, l'acné sous toutes ses formes, les mycoses cutanées et unguéales, les allergies de contact et alimentaires, les infections bactériennes et virales de la peau, ainsi que les maladies inflammatoires chroniques. Chaque patient bénéficie d'un diagnostic précis et d'un plan de traitement personnalisé.",
+            "L'acide hyaluronique est une substance naturellement présente dans la peau. En médecine esthétique, elle est injectée pour restaurer le volume du visage (joues, tempes, lèvres), lisser les rides et plis (rides nasogéniennes, sillons), redessiner les contours du visage ou des lèvres et hydrater en profondeur grâce à sa capacité à retenir l'eau. C'est une technique non chirurgicale, rapide, réversible et adaptée à chaque patient pour un résultat naturel.",
         },
         {
-          title: 'Dermatologie Chirurgicale',
+          title: 'Toxine Botulique (Botox)',
           description:
-            'Exérèse de lésions cutanées, biopsies, chirurgie des tumeurs bénignes et malignes, cryothérapie, électrocoagulation.',
+            "Réduction de l'apparence des rides et ridules du visage par relaxation ciblée des muscles.",
           details:
-            "Notre cabinet est équipé pour réaliser les interventions de dermatologie chirurgicale en toute sécurité. Nous pratiquons l'exérèse de lésions cutanées suspectes ou gênantes, les biopsies diagnostiques, la chirurgie des tumeurs bénignes (kystes, lipomes) et malignes (carcinomes, mélanomes), la cryothérapie à l'azote liquide et l'électrocoagulation. Toutes les interventions sont réalisées sous anesthésie locale dans des conditions d'asepsie strictes.",
+            "Le Botox est un traitement esthétique non chirurgical utilisé pour réduire l'apparence des rides et des ridules du visage. Il agit en relaxant certains muscles responsables des expressions répétées qui provoquent les plis de la peau, notamment au niveau du front, entre les sourcils et autour des yeux.",
         },
         {
-          title: 'Dermatologie Esthétique',
+          title: 'Mésothérapie Visage',
           description:
-            'Peelings, mésothérapie, traitement des taches pigmentaires, rajeunissement cutané, injections et soins anti-âge.',
+            "Injections de vitamines, d'acide hyaluronique et de nutriments pour revitaliser et hydrater la peau.",
           details:
-            "Notre pôle esthétique propose des soins avancés pour sublimer votre peau. Peelings chimiques (superficiels, moyens et profonds), mésothérapie revitalisante, traitement ciblé des taches pigmentaires et du mélasma, rajeunissement cutané par micro-needling, injections d'acide hyaluronique et de toxine botulique, PRP (plasma riche en plaquettes) et protocoles anti-âge personnalisés pour un résultat naturel et harmonieux.",
+            "La mésothérapie est un traitement esthétique non chirurgical qui consiste à injecter de petites quantités de vitamines, d'acide hyaluronique et d'autres nutriments directement dans la peau. Cette technique permet d'hydrater, revitaliser et améliorer la qualité de la peau. Elle aide à redonner de l'éclat, à améliorer l'élasticité et à atténuer les signes du vieillissement. Le traitement est rapide, peu invasif et nécessite généralement peu de temps de récupération.",
         },
         {
-          title: 'Vénéréologie (IST)',
+          title: 'Skinbooster',
           description:
-            'Dépistage, diagnostic et traitement des infections sexuellement transmissibles, suivi et conseil préventif.',
+            "Injection d'acide hyaluronique en profondeur pour améliorer l'hydratation, la texture et l'élasticité de la peau.",
           details:
-            'Nous assurons une prise en charge complète et confidentielle des infections sexuellement transmissibles (IST). Dépistage systématique ou orienté, diagnostic clinique et biologique, traitement adapté selon les dernières recommandations, suivi post-thérapeutique et conseil préventif. Notre approche bienveillante garantit un accompagnement respectueux et sans jugement pour tous nos patients.',
+            "Le skinbooster est un traitement esthétique qui consiste à injecter de l'acide hyaluronique dans les couches profondes de la peau afin d'améliorer son hydratation, sa texture et son élasticité. Contrairement aux injections de comblement, il ne modifie pas les volumes du visage mais agit en profondeur pour revitaliser la peau. Le résultat est un teint plus lumineux, une peau plus lisse et plus hydratée de façon naturelle.",
         },
         {
-          title: 'Traitement Laser',
+          title: 'Microneedling',
           description:
-            'Épilation laser, traitement des cicatrices, verrues, lésions vasculaires et pigmentaires avec des lasers de pointe.',
+            'Micro-perforations stimulant la production de collagène pour améliorer texture, cicatrices et fermeté.',
           details:
-            "Notre plateau technique laser de dernière génération permet de traiter un large éventail de pathologies et imperfections. Épilation laser longue durée pour tous types de peau, traitement des cicatrices d'acné et chirurgicales, destruction des verrues résistantes, prise en charge des lésions vasculaires (couperose, angiomes) et pigmentaires (taches solaires, lentigos). Un protocole sur mesure est établi après une consultation d'évaluation.",
+            "Le microneedling est un traitement esthétique qui consiste à réaliser de micro-perforations dans la peau à l'aide de fines aiguilles. Cette technique stimule la production naturelle de collagène et favorise le renouvellement de la peau. Elle permet d'améliorer la texture cutanée, de réduire l'apparence des cicatrices, des pores dilatés et des ridules, tout en redonnant éclat et fermeté à la peau.",
         },
         {
-          title: 'Dermatoscopie',
+          title: 'Plasma Riche en Plaquettes (PRP)',
           description:
-            'Examen dermoscopique des grains de beauté, surveillance des nævus, dépistage précoce du mélanome et des cancers cutanés.',
+            'Stimulation de la repousse des cheveux et amélioration de la densité capillaire grâce aux facteurs de croissance.',
           details:
-            'La dermatoscopie est un examen non invasif indispensable pour la surveillance de vos grains de beauté. Grâce à un dermoscope de haute précision, nous analysons la structure microscopique de chaque lésion pigmentée, assurons le suivi photographique des nævus atypiques, et réalisons le dépistage précoce du mélanome et des autres cancers cutanés. Un examen régulier est recommandé, en particulier pour les peaux à risque.',
+            "Le plasma riche en plaquettes (PRP) est un traitement utilisé pour stimuler la repousse des cheveux et ralentir leur chute. Il consiste à prélever une petite quantité de sang du patient, puis à isoler le plasma riche en plaquettes avant de l'injecter dans le cuir chevelu. Riche en facteurs de croissance, le PRP aide à stimuler les follicules pileux, améliorer la densité capillaire et renforcer les cheveux de manière naturelle.",
+        },
+        {
+          title: 'Mésothérapie Capillaire',
+          description:
+            'Injections de vitamines, minéraux et nutriments dans le cuir chevelu pour nourrir et stimuler la pousse des cheveux.',
+          details:
+            "La mésothérapie capillaire est un traitement qui consiste à injecter dans le cuir chevelu un mélange de vitamines, minéraux et nutriments essentiels. Cette technique aide à nourrir les follicules pileux, stimuler la pousse des cheveux et ralentir leur chute. Elle permet également d'améliorer la qualité et la densité des cheveux.",
+        },
+        {
+          title: 'Biofiller',
+          description:
+            'Traitement naturel utilisant des éléments issus du sang du patient pour restaurer le volume et régénérer la peau.',
+          details:
+            'Le biofiller est un traitement esthétique qui utilise des éléments naturels, généralement issus du sang du patient, pour restaurer les volumes et améliorer la qualité de la peau. Après un prélèvement sanguin et un procédé de préparation spécifique, la substance obtenue est réinjectée dans les zones à traiter. Le biofiller aide à lisser les rides, redonner du volume et stimuler la régénération de la peau de manière naturelle.',
+        },
+        {
+          title: 'Laser Épilatoire',
+          description:
+            'Réduction durable de la pilosité grâce à un laser adapté à tous les phototypes.',
+          details:
+            "L'épilation laser est une technique esthétique qui permet de réduire durablement la pilosité. Elle utilise un faisceau lumineux ciblant le pigment du poil afin de détruire le follicule pileux tout en respectant la peau environnante. Plusieurs séances sont généralement nécessaires pour obtenir un résultat optimal. Le traitement permet d'obtenir une peau plus lisse et une repousse des poils progressivement réduite. Le cabinet dispose d'un laser épilatoire adapté à tous les phototypes.",
+        },
+        {
+          title: 'Laser CO₂',
+          description:
+            'Amélioration de la texture cutanée, réduction des cicatrices, rides et taches par stimulation du collagène.',
+          details:
+            "Le laser CO₂ est un traitement esthétique utilisé pour améliorer la texture et l'apparence de la peau. Il agit en retirant les couches superficielles de l'épiderme et en stimulant la production de collagène dans le derme. Ce procédé permet de réduire les cicatrices (cicatrices d'acné, de varicelle, de griffures…), les rides, les taches et les irrégularités cutanées, tout en raffermissant et rajeunissant la peau. Les résultats sont progressifs et durables après une période de récupération adaptée.",
+        },
+        {
+          title: 'Laser Détatouage',
+          description:
+            'Effacement ou atténuation des tatouages par fragmentation des pigments grâce à des impulsions laser ciblées.',
+          details:
+            "Le laser détatouage est une technique qui permet d'effacer ou d'atténuer les tatouages de manière sécurisée. Il fonctionne en fragmentant les pigments de l'encre grâce à des impulsions lumineuses ciblées, que le corps élimine ensuite naturellement. Plusieurs séances sont généralement nécessaires selon la taille, la couleur et la profondeur du tatouage. Le traitement permet une réduction progressive de l'encre tout en préservant la peau environnante.",
+        },
+        {
+          title: 'Peeling Chimique',
+          description:
+            'Exfoliation contrôlée pour stimuler le renouvellement cellulaire et réduire taches, rides et cicatrices.',
+          details:
+            "Le peeling chimique est un traitement esthétique qui consiste à appliquer une solution chimique sur la peau pour exfolier ses couches superficielles. Cette technique permet de stimuler le renouvellement cellulaire, d'améliorer la texture de la peau et de réduire les imperfections telles que les taches, les rides fines et les cicatrices d'acné. Selon l'intensité du peeling, les résultats peuvent être visibles rapidement et contribuent à un teint plus lumineux et uniforme.",
+        },
+        {
+          title: 'Carbon Peel (Hollywood Peel)',
+          description:
+            'Peeling au laser et au carbone pour purifier la peau, réduire le sébum et resserrer les pores.',
+          details:
+            "Le carbon peel, ou « peeling au laser au carbone », est un traitement esthétique non invasif qui associe une lotion au carbone et un laser spécifique. Le carbone attire les impuretés de la peau et, lors du passage du laser, les particules sont éliminées tout en stimulant la production de collagène. Ce traitement aide à purifier la peau, réduire l'excès de sébum, resserrer les pores et donner un teint plus lumineux et uniforme.",
+        },
+        {
+          title: 'IPL (Lumière Pulsée)',
+          description:
+            'Traitement des taches pigmentaires, rougeurs, vaisseaux visibles et signes du vieillissement par lumière pulsée.',
+          details:
+            'La lumière pulsée (IPL) est un traitement esthétique non invasif qui utilise des impulsions lumineuses pour cibler des imperfections de la peau telles que les taches pigmentaires, les rougeurs, les vaisseaux visibles et les signes du vieillissement. Elle stimule également la production de collagène, améliore la texture de la peau et unifie le teint. Plusieurs séances sont souvent nécessaires pour obtenir des résultats optimaux et durables.',
+        },
+        {
+          title: 'Hydrafacial',
+          description:
+            'Soin combinant nettoyage, exfoliation, extraction des impuretés et hydratation profonde pour un teint lumineux.',
+          details:
+            "Le soin Hydrafacial est un traitement esthétique non invasif qui combine nettoyage, exfoliation, extraction des impuretés et hydratation profonde de la peau. Grâce à un dispositif spécifique, il permet d'éliminer les cellules mortes, les toxines et l'excès de sébum tout en apportant des nutriments essentiels et de l'acide hyaluronique. Ce soin améliore l'éclat, l'hydratation et la texture de la peau pour un teint visiblement plus lisse et lumineux.",
+        },
+        {
+          title: 'Lipolyse',
+          description:
+            'Réduction des amas graisseux localisés, notamment le double menton, sans chirurgie.',
+          details:
+            "La lipolyse est un traitement esthétique non chirurgical qui permet de réduire les amas graisseux localisés, notamment le double menton. Grâce à des injections ou à des techniques spécifiques, les cellules graisseuses sont décomposées puis éliminées naturellement par l'organisme. Ce traitement aide à affiner le contour du visage et à redessiner l'ovale du menton de manière ciblée, sans chirurgie.",
         },
       ],
     },
