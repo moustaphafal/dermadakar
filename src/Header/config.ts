@@ -1,6 +1,5 @@
 import type { GlobalConfig } from 'payload'
 
-import { link } from '@/fields/link'
 import { revalidateHeader } from './hooks/revalidateHeader'
 
 export const Header: GlobalConfig = {
@@ -10,20 +9,35 @@ export const Header: GlobalConfig = {
   },
   fields: [
     {
-      name: 'navItems',
+      name: 'navLinks',
       type: 'array',
+      label: 'Liens de navigation',
       fields: [
-        link({
-          appearances: false,
-        }),
-      ],
-      maxRows: 6,
-      admin: {
-        initCollapsed: true,
-        components: {
-          RowLabel: '@/Header/RowLabel#RowLabel',
+        {
+          name: 'label',
+          type: 'text',
+          required: true,
+          localized: true,
         },
-      },
+        {
+          name: 'href',
+          type: 'text',
+          required: true,
+        },
+      ],
+    },
+    {
+      name: 'ctaLabel',
+      type: 'text',
+      label: 'Texte du bouton CTA',
+      localized: true,
+      defaultValue: 'Rendez-vous',
+    },
+    {
+      name: 'ctaLink',
+      type: 'text',
+      label: 'Lien du bouton CTA',
+      defaultValue: 'https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui',
     },
   ],
   hooks: {

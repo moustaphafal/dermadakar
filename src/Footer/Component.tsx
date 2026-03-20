@@ -4,18 +4,20 @@ import React from 'react'
 
 import type { Footer } from '@/payload-types'
 
-const navLinks = [
-  { label: 'Accueil', href: '#accueil' },
-  { label: 'Avis', href: '#avis' },
-  { label: 'Le Docteur', href: '#docteur' },
-  { label: 'Le Cabinet', href: '#cabinet' },
-  { label: 'Services', href: '#services' },
-  { label: 'Photos', href: '#photos' },
-  { label: 'Contact', href: '#contact' },
-]
-
 export async function Footer() {
   const footerData: Footer = await getCachedGlobal('footer', 1)()
+
+  const navLinks = footerData?.navLinks ?? []
+  const description =
+    footerData?.description ??
+    'Cabinet de dermatologie \u00e0 Dakar, sp\u00e9cialis\u00e9 en dermatologie m\u00e9dicale, chirurgicale et esth\u00e9tique. Votre peau m\u00e9rite le meilleur.'
+  const address = footerData?.address ?? 'Rue X, Quartier Y, Dakar, S\u00e9n\u00e9gal'
+  const phone = footerData?.phone ?? '+221 XX XXX XX XX'
+  const email = footerData?.email ?? 'contact@dermadakar.com'
+  const hours = footerData?.hours ?? 'Lun - Ven : 9h - 18h | Sam : 9h - 13h'
+  const facebookUrl = footerData?.socialMedia?.facebook ?? '#'
+  const instagramUrl = footerData?.socialMedia?.instagram ?? '#'
+  const linkedinUrl = footerData?.socialMedia?.linkedin ?? '#'
 
   return (
     <footer className="bg-rose-50 text-nude-800">
@@ -34,14 +36,11 @@ export async function Footer() {
                 Derma<span className="font-semibold">Dakar</span>
               </span>
             </Link>
-            <p className="text-nude-500 text-sm leading-relaxed mb-6">
-              Cabinet de dermatologie à Dakar, spécialisé en dermatologie médicale,
-              chirurgicale et esthétique. Votre peau mérite le meilleur.
-            </p>
+            <p className="text-nude-500 text-sm leading-relaxed mb-6">{description}</p>
             {/* Social links */}
             <div className="flex gap-3">
               <a
-                href="#"
+                href={facebookUrl}
                 className="w-10 h-10 bg-rose-50 hover:bg-rose-400 text-rose-400 hover:text-white rounded-full flex items-center justify-center transition-colors duration-300"
                 aria-label="Facebook"
               >
@@ -50,7 +49,7 @@ export async function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href={instagramUrl}
                 className="w-10 h-10 bg-rose-50 hover:bg-rose-400 text-rose-400 hover:text-white rounded-full flex items-center justify-center transition-colors duration-300"
                 aria-label="Instagram"
               >
@@ -59,7 +58,7 @@ export async function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href={linkedinUrl}
                 className="w-10 h-10 bg-rose-50 hover:bg-rose-400 text-rose-400 hover:text-white rounded-full flex items-center justify-center transition-colors duration-300"
                 aria-label="LinkedIn"
               >
@@ -96,29 +95,73 @@ export async function Footer() {
             </h4>
             <div className="space-y-4 text-nude-500 text-sm">
               <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-rose-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                <svg
+                  className="w-5 h-5 text-rose-400 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                  />
                 </svg>
-                <span>Rue X, Quartier Y, Dakar, Sénégal</span>
+                <span>{address}</span>
               </div>
               <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-rose-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                <svg
+                  className="w-5 h-5 text-rose-400 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
                 </svg>
-                <span>+221 XX XXX XX XX</span>
+                <span>{phone}</span>
               </div>
               <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-rose-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                <svg
+                  className="w-5 h-5 text-rose-400 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
                 </svg>
-                <span>contact@dermadakar.com</span>
+                <span>{email}</span>
               </div>
               <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-rose-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg
+                  className="w-5 h-5 text-rose-400 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
-                <span>Lun - Ven : 9h - 18h | Sam : 9h - 13h</span>
+                <span>{hours}</span>
               </div>
             </div>
           </div>
@@ -132,9 +175,7 @@ export async function Footer() {
             <p className="text-nude-500 text-xs">
               © {new Date().getFullYear()} DermaDakar. Tous droits réservés.
             </p>
-            <p className="text-nude-500 text-xs">
-              Cabinet de Dermatologie — Dakar, Sénégal
-            </p>
+            <p className="text-nude-500 text-xs">Cabinet de Dermatologie — Dakar, Sénégal</p>
           </div>
         </div>
       </div>

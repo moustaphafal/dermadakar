@@ -2018,26 +2018,15 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
  */
 export interface Header {
   id: string;
-  navItems?:
+  navLinks?:
     | {
-        link: {
-          type?: ('reference' | 'custom') | null;
-          newTab?: boolean | null;
-          reference?:
-            | ({
-                relationTo: 'pages';
-                value: string | Page;
-              } | null)
-            | ({
-                relationTo: 'posts';
-                value: string | Post;
-              } | null);
-          url?: string | null;
-          label: string;
-        };
+        label: string;
+        href: string;
         id?: string | null;
       }[]
     | null;
+  ctaLabel?: string | null;
+  ctaLink?: string | null;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -2047,26 +2036,24 @@ export interface Header {
  */
 export interface Footer {
   id: string;
-  navItems?:
+  description?: string | null;
+  navLinks?:
     | {
-        link: {
-          type?: ('reference' | 'custom') | null;
-          newTab?: boolean | null;
-          reference?:
-            | ({
-                relationTo: 'pages';
-                value: string | Page;
-              } | null)
-            | ({
-                relationTo: 'posts';
-                value: string | Post;
-              } | null);
-          url?: string | null;
-          label: string;
-        };
+        label: string;
+        href: string;
         id?: string | null;
       }[]
     | null;
+  address?: string | null;
+  phone?: string | null;
+  email?: string | null;
+  hours?: string | null;
+  ctaLink?: string | null;
+  socialMedia?: {
+    facebook?: string | null;
+    instagram?: string | null;
+    linkedin?: string | null;
+  };
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -2075,20 +2062,15 @@ export interface Footer {
  * via the `definition` "header_select".
  */
 export interface HeaderSelect<T extends boolean = true> {
-  navItems?:
+  navLinks?:
     | T
     | {
-        link?:
-          | T
-          | {
-              type?: T;
-              newTab?: T;
-              reference?: T;
-              url?: T;
-              label?: T;
-            };
+        label?: T;
+        href?: T;
         id?: T;
       };
+  ctaLabel?: T;
+  ctaLink?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;
@@ -2098,19 +2080,25 @@ export interface HeaderSelect<T extends boolean = true> {
  * via the `definition` "footer_select".
  */
 export interface FooterSelect<T extends boolean = true> {
-  navItems?:
+  description?: T;
+  navLinks?:
     | T
     | {
-        link?:
-          | T
-          | {
-              type?: T;
-              newTab?: T;
-              reference?: T;
-              url?: T;
-              label?: T;
-            };
+        label?: T;
+        href?: T;
         id?: T;
+      };
+  address?: T;
+  phone?: T;
+  email?: T;
+  hours?: T;
+  ctaLink?: T;
+  socialMedia?:
+    | T
+    | {
+        facebook?: T;
+        instagram?: T;
+        linkedin?: T;
       };
   updatedAt?: T;
   createdAt?: T;

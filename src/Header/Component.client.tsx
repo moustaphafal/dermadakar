@@ -7,16 +7,6 @@ import React, { useEffect, useState } from 'react'
 import type { Header } from '@/payload-types'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 
-const navLinks = [
-  { label: 'Accueil', href: '#accueil' },
-  { label: 'Avis', href: '#avis' },
-  { label: 'Le Docteur', href: '#docteur' },
-  { label: 'Le Cabinet', href: '#cabinet' },
-  { label: 'Services', href: '#services' },
-  { label: 'Photos', href: '#photos' },
-  { label: 'Contact', href: '#contact' },
-]
-
 interface HeaderClientProps {
   data: Header
 }
@@ -46,6 +36,11 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const navLinks = data?.navLinks ?? []
+  const ctaLabel = data?.ctaLabel ?? 'Rendez-vous'
+  const ctaLink =
+    data?.ctaLink ?? 'https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui'
+
   const isHomepage = pathname === '/'
 
   return (
@@ -61,11 +56,15 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
         <div className="container px-4 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-rose-400`}>
+            <div
+              className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-rose-400`}
+            >
               <span className="text-white font-bold text-lg">D</span>
             </div>
             <div>
-              <span className={`text-xl font-light tracking-wider transition-colors duration-300 text-white`}>
+              <span
+                className={`text-xl font-light tracking-wider transition-colors duration-300 text-white`}
+              >
                 Derma<span className="font-semibold">Dakar</span>
               </span>
             </div>
@@ -83,12 +82,12 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
               </a>
             ))}
             <a
-              href="https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui"
+              href={ctaLink}
               target="_blank"
               rel="noopener noreferrer"
               className={`ml-2 px-6 py-2.5 rounded-full text-xs tracking-widest uppercase transition-all duration-300 bg-rose-400 text-white hover:bg-rose-500 shadow-md shadow-rose-400/20`}
             >
-              Rendez-vous
+              {ctaLabel}
             </a>
             <LanguageSwitcher />
           </nav>
@@ -109,7 +108,11 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
               {mobileOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
               )}
             </svg>
           </button>
@@ -134,13 +137,13 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
                 </a>
               ))}
               <a
-                href="https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui"
+                href={ctaLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 py-3 px-4 bg-rose-400 text-white text-center rounded-xl text-sm tracking-widest uppercase hover:bg-rose-500 transition-all"
               >
-                Prendre Rendez-vous
+                {ctaLabel}
               </a>
               <div className="mt-3 flex justify-center">
                 <LanguageSwitcher />

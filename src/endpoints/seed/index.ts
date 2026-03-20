@@ -49,7 +49,7 @@ export const seed = async ({
       payload.updateGlobal({
         slug: global,
         data: {
-          navItems: [],
+          navLinks: [],
         },
         depth: 0,
         context: {
@@ -221,55 +221,35 @@ export const seed = async ({
     payload.updateGlobal({
       slug: 'header',
       data: {
-        navItems: [
-          {
-            link: {
-              type: 'custom',
-              label: 'Posts',
-              url: '/posts',
-            },
-          },
-          {
-            link: {
-              type: 'reference',
-              label: 'Contact',
-              reference: {
-                relationTo: 'pages',
-                value: contactPage.id,
-              },
-            },
-          },
+        navLinks: [
+          { label: 'Accueil', href: '#accueil' },
+          { label: 'Le Docteur', href: '#docteur' },
+          { label: 'Services', href: '#services' },
+          { label: 'Contact', href: '#contact' },
         ],
+        ctaLabel: 'Rendez-vous',
+        ctaLink: 'https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui',
       },
     }),
     payload.updateGlobal({
       slug: 'footer',
       data: {
-        navItems: [
-          {
-            link: {
-              type: 'custom',
-              label: 'Admin',
-              url: '/admin',
-            },
-          },
-          {
-            link: {
-              type: 'custom',
-              label: 'Source Code',
-              newTab: true,
-              url: 'https://github.com/payloadcms/payload/tree/main/templates/website',
-            },
-          },
-          {
-            link: {
-              type: 'custom',
-              label: 'Payload',
-              newTab: true,
-              url: 'https://payloadcms.com/',
-            },
-          },
+        description:
+          'Cabinet de dermatologie \u00e0 Dakar, sp\u00e9cialis\u00e9 en dermatologie m\u00e9dicale, chirurgicale et esth\u00e9tique. Votre peau m\u00e9rite le meilleur.',
+        navLinks: [
+          { label: 'Accueil', href: '#accueil' },
+          { label: 'Avis', href: '#avis' },
+          { label: 'Le Docteur', href: '#docteur' },
+          { label: 'Le Cabinet', href: '#cabinet' },
+          { label: 'Services', href: '#services' },
+          { label: 'Photos', href: '#photos' },
+          { label: 'Contact', href: '#contact' },
         ],
+        address: 'Rue X, Quartier Y, Dakar, S\u00e9n\u00e9gal',
+        phone: '+221 XX XXX XX XX',
+        email: 'contact@dermadakar.com',
+        hours: 'Lun - Ven : 9h - 18h | Sam : 9h - 13h',
+        ctaLink: 'https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui',
       },
     }),
   ])
