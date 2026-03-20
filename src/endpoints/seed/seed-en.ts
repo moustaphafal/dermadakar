@@ -603,6 +603,7 @@ const seedEnglish = async () => {
     collection: 'pages',
     id: page.id,
     locale: 'fr',
+    context: { disableRevalidate: true },
     data: {
       title: 'Accueil',
       slug: 'accueil',
@@ -619,6 +620,7 @@ const seedEnglish = async () => {
     collection: 'pages',
     id: page.id,
     locale: 'en',
+    context: { disableRevalidate: true },
     data: {
       title: 'Home',
       slug: 'accueil',
