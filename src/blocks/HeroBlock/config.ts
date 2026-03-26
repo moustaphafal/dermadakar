@@ -20,7 +20,7 @@ export const HeroBlock: Block = {
       name: 'doctorName',
       type: 'text',
       required: true,
-      defaultValue: 'Nom du Docteur',
+      defaultValue: 'Dounia El AKKAOUI',
       label: 'Nom du docteur',
     },
     {
@@ -73,7 +73,7 @@ export const HeroBlock: Block = {
     {
       name: 'phone',
       type: 'text',
-      defaultValue: '+221 XX XXX XX XX',
+      defaultValue: '+221 78 892 77 02',
       label: 'Téléphone',
     },
     {
@@ -87,7 +87,7 @@ export const HeroBlock: Block = {
       name: 'hours',
       type: 'text',
       localized: true,
-      defaultValue: 'Lun - Ven : 9h - 18h',
+      defaultValue: 'Lun - Sam : Sur rendez-vous',
       label: 'Horaires',
     },
   ],

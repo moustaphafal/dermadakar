@@ -34,7 +34,7 @@ export const DoctorBlock: Block = {
       name: 'doctorName',
       type: 'text',
       required: true,
-      defaultValue: 'Nom du Docteur',
+      defaultValue: 'Dounia El AKKAOUI',
       label: 'Nom du docteur',
     },
     {
@@ -62,11 +62,11 @@ export const DoctorBlock: Block = {
       defaultValue: [
         {
           paragraph:
-            'Diplômé(e) de la Faculté de Médecine de Dakar, le Dr. Nom du Docteur exerce la dermatologie avec passion et excellence depuis plus de X années.',
+            'Diplômée de la Faculté de Médecine de Dakar, le Dr. Nom du Docteur exerce la dermatologie avec passion et excellence depuis plusieurs années.',
         },
         {
           paragraph:
-            "Spécialisé(e) en dermatologie médicale, chirurgicale et esthétique, il/elle prend en charge l'ensemble des pathologies cutanées avec une approche personnalisée et bienveillante.",
+            "Spécialisée en dermatologie médicale, chirurgicale et esthétique, elle prend en charge l'ensemble des pathologies cutanées avec une approche personnalisée et bienveillante.",
         },
         {
           paragraph:
@@ -98,9 +98,13 @@ export const DoctorBlock: Block = {
       ],
       defaultValue: [
         { label: 'Doctorat en Médecine — Université Cheikh Anta Diop de Dakar' },
-        { label: 'Spécialisation en Dermatologie-Vénéréologie' },
-        { label: 'Formation en Dermatologie Esthétique et Laser' },
-        { label: 'Membre de la Société Sénégalaise de Dermatologie' },
+        { label: 'Spécialisée en Dermatologie pédiatrique — Université de Dijon' },
+        { label: 'Spécialisée en Peau et Maladies de systèmes - Université de Montpellier' },
+        {
+          label:
+            'Diplômée en dermatologie esthétique, cosmétologie et lasers médicaux - Université de Paris Cité',
+        },
+        { label: 'Interne des hopitaux de Paris' },
       ],
     },
   ],

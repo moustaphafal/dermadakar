@@ -28,14 +28,14 @@ export const ContactBlock: Block = {
       name: 'address',
       type: 'textarea',
       required: true,
-      defaultValue: 'Rue X, Quartier Y\nDakar, Sénégal',
+      defaultValue: 'Résidence Anna, 18 Rue de Kolda, Point E, Dakar, Sénégal',
       label: 'Adresse',
     },
     {
       name: 'phone',
       type: 'text',
       required: true,
-      defaultValue: '+221 XX XXX XX XX',
+      defaultValue: '+221 78 892 77 02',
       label: 'Téléphone principal',
     },
     {
@@ -48,7 +48,7 @@ export const ContactBlock: Block = {
       name: 'email',
       type: 'email',
       required: true,
-      defaultValue: 'contact@dermadakar.com',
+      defaultValue: 'derma.douniaelakkaoui@gmail.com',
       label: 'Email',
     },
     {
@@ -56,7 +56,7 @@ export const ContactBlock: Block = {
       type: 'text',
       required: true,
       localized: true,
-      defaultValue: 'Lun - Ven : 9h - 18h',
+      defaultValue: 'Lun - Sam : Sur rendez-vous',
       label: 'Horaires (ligne 1)',
     },
     {
@@ -86,7 +86,7 @@ export const ContactBlock: Block = {
       name: 'ctaLink',
       type: 'text',
       required: true,
-      defaultValue: 'tel:+221XXXXXXXX',
+      defaultValue: 'tel:+221 78 892 77 02',
       label: 'Lien bouton CTA',
     },
     {
@@ -94,7 +94,7 @@ export const ContactBlock: Block = {
       type: 'text',
       required: true,
       defaultValue:
-        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.8942261569373!2d-17.4440!3d14.6928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b3c5bb71%3A0xb5df18b79f14cf66!2sDakar%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr',
+        'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3859.278799482938!2d-17.4604286!3d14.6968193!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec17327f180020b%3A0xe9ded1d954bbd3bb!2sDr%20Dounia%20EL%20AKKAOUI!5e0!3m2!1sfr!2ssn!4v1774561244282!5m2!1sfr!2ssn',
       label: 'URL Google Maps Embed',
     },
   ],
