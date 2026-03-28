@@ -15,6 +15,7 @@ import { CabinetBlock } from '../../blocks/CabinetBlock/config'
 import { ReviewsBlock } from '../../blocks/ReviewsBlock/config'
 import { GalleryBlock } from '../../blocks/GalleryBlock/config'
 import { ContactBlock } from '../../blocks/ContactBlock/config'
+import { QuoteBlock } from '../../blocks/QuoteBlock/config'
 import { hero } from '@/heros/config'
 import { slugField } from 'payload'
 import { populatePublishedAt } from '../../hooks/populatePublishedAt'
@@ -95,6 +96,7 @@ export const Pages: CollectionConfig<'pages'> = {
                 ReviewsBlock,
                 GalleryBlock,
                 ContactBlock,
+                QuoteBlock,
               ],
               required: true,
               localized: true,

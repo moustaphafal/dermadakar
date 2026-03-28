@@ -15,6 +15,7 @@ import { CabinetBlockComponent } from '@/blocks/CabinetBlock/Component'
 import { ReviewsBlockComponent } from '@/blocks/ReviewsBlock/Component'
 import { GalleryBlockComponent } from '@/blocks/GalleryBlock/Component'
 import { ContactBlockComponent } from '@/blocks/ContactBlock/Component'
+import { QuoteBlockComponent } from '@/blocks/QuoteBlock/Component'
 
 const blockComponents = {
   archive: ArchiveBlock,
@@ -30,6 +31,7 @@ const blockComponents = {
   reviewsBlock: ReviewsBlockComponent,
   galleryBlock: GalleryBlockComponent,
   contactBlock: ContactBlockComponent,
+  quoteBlock: QuoteBlockComponent,
 }
 
 export const RenderBlocks: React.FC<{
@@ -59,6 +61,7 @@ export const RenderBlocks: React.FC<{
                 'reviewsBlock',
                 'galleryBlock',
                 'contactBlock',
+                'quoteBlock',
               ].includes(blockType)
 
               return (

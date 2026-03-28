@@ -212,6 +212,7 @@ export interface Page {
     | ReviewsBlockType
     | GalleryBlockType
     | ContactBlockType
+    | QuoteBlockType
   )[];
   meta?: {
     title?: string | null;
@@ -979,6 +980,17 @@ export interface ContactBlockType {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "QuoteBlockType".
+ */
+export interface QuoteBlockType {
+  image: string | Media;
+  description: string;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'quoteBlock';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "redirects".
  */
 export interface Redirect {
@@ -1293,6 +1305,7 @@ export interface PagesSelect<T extends boolean = true> {
         reviewsBlock?: T | ReviewsBlockTypeSelect<T>;
         galleryBlock?: T | GalleryBlockTypeSelect<T>;
         contactBlock?: T | ContactBlockTypeSelect<T>;
+        quoteBlock?: T | QuoteBlockTypeSelect<T>;
       };
   meta?:
     | T
@@ -1566,6 +1579,16 @@ export interface ContactBlockTypeSelect<T extends boolean = true> {
   ctaLabel?: T;
   ctaLink?: T;
   mapEmbedUrl?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "QuoteBlockType_select".
+ */
+export interface QuoteBlockTypeSelect<T extends boolean = true> {
+  image?: T;
+  description?: T;
   id?: T;
   blockName?: T;
 }

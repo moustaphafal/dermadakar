@@ -3,6 +3,15 @@
 
 @config '../../../tailwind.config.mjs';
 
+/* Yearlong — Script font for citation block */
+@font-face {
+  font-family: 'Yearlong';
+  src: url('/fonts/yearlong-font/YearlongDemo-nArgV.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is([data-theme='dark'] *));
 @custom-variant sm (@media (width >= theme(--breakpoint-sm)));
 @custom-variant md (@media (width >= theme(--breakpoint-md)));
