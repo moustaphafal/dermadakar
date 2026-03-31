@@ -6,6 +6,8 @@ import React, { useEffect, useState } from 'react'
 
 import type { Header, Media } from '@/payload-types'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
+import NextImage from 'next/image'
+import { getMediaUrl } from '@/utilities/getMediaUrl'
 
 interface HeaderClientProps {
   data: Header
@@ -59,7 +61,14 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             {logo?.url ? (
-              <img src={logo.url} alt={logo.alt || siteName} className="h-10 w-auto rounded-full" />
+              <NextImage
+                src={getMediaUrl(logo.sizes?.thumbnail?.url || logo.url)}
+                alt={logo.alt || siteName}
+                width={40}
+                height={40}
+                className="h-10 w-auto rounded-full"
+                quality={80}
+              />
             ) : (
               <div
                 className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-rose-400`}

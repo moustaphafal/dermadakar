@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react'
 import type { GalleryBlockType, Media } from '@/payload-types'
+import NextImage from 'next/image'
+import { getMediaUrl } from '@/utilities/getMediaUrl'
 
 export const GalleryBlockComponent: React.FC<GalleryBlockType> = ({
   sectionSubtitle,
@@ -28,8 +30,7 @@ export const GalleryBlockComponent: React.FC<GalleryBlockType> = ({
         <div className="text-center mb-16">
           <p className="text-nude-500 text-sm tracking-[0.3em] uppercase mb-3">{sectionSubtitle}</p>
           <h2 className="text-3xl md:text-5xl font-light text-nude-900">
-            {titlePrefix}{' '}
-            <span className="font-semibold">{titleBold}</span>
+            {titlePrefix} <span className="font-semibold">{titleBold}</span>
           </h2>
           <div className="flex items-center justify-center mt-6">
             <div className="h-px w-12 bg-rose-200" />
@@ -66,10 +67,14 @@ export const GalleryBlockComponent: React.FC<GalleryBlockType> = ({
                 onClick={() => setSelectedImage(index)}
               >
                 {imageData?.url ? (
-                  <img
-                    src={imageData.url}
+                  <NextImage
+                    src={getMediaUrl(imageData.sizes?.small?.url || imageData.url)}
                     alt={galleryImage.label}
+                    width={imageData.sizes?.small?.width || imageData.width || 600}
+                    height={imageData.sizes?.small?.height || imageData.height || 600}
                     className="w-full h-full object-cover"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    quality={80}
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center">
@@ -113,10 +118,14 @@ export const GalleryBlockComponent: React.FC<GalleryBlockType> = ({
               {(() => {
                 const img = filteredImages[selectedImage].image as Media | null | undefined
                 return img?.url ? (
-                  <img
-                    src={img.url}
+                  <NextImage
+                    src={getMediaUrl(img.sizes?.large?.url || img.url)}
                     alt={filteredImages[selectedImage].label}
+                    width={img.sizes?.large?.width || img.width || 1400}
+                    height={img.sizes?.large?.height || img.height || 1050}
                     className="w-full h-full object-cover"
+                    sizes="100vw"
+                    quality={80}
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center">

@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react'
 import type { TraitementBlockType, Media } from '@/payload-types'
+import NextImage from 'next/image'
+import { getMediaUrl } from '@/utilities/getMediaUrl'
 
 export const TraitementBlockComponent: React.FC<TraitementBlockType> = ({
   sectionSubtitle,
@@ -50,10 +52,13 @@ export const TraitementBlockComponent: React.FC<TraitementBlockType> = ({
                 {/* Image background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-nude-300 to-nude-500">
                   {imageData?.url ? (
-                    <img
-                      src={imageData.url}
+                    <NextImage
+                      src={getMediaUrl(imageData.sizes?.medium?.url || imageData.url)}
                       alt={service.title}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      quality={80}
                     />
                   ) : (
                     <>
@@ -122,10 +127,13 @@ export const TraitementBlockComponent: React.FC<TraitementBlockType> = ({
               {(() => {
                 const img = services[selectedService].image as Media | null | undefined
                 return img?.url ? (
-                  <img
-                    src={img.url}
+                  <NextImage
+                    src={getMediaUrl(img.sizes?.medium?.url || img.url)}
                     alt={services[selectedService].title}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 512px"
+                    quality={80}
                   />
                 ) : (
                   <>

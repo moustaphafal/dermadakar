@@ -1,6 +1,8 @@
 import React from 'react'
 import type { QuoteBlockType } from '@/payload-types'
 import type { Media } from '@/payload-types'
+import NextImage from 'next/image'
+import { getMediaUrl } from '@/utilities/getMediaUrl'
 
 export const QuoteBlockComponent: React.FC<QuoteBlockType> = ({ image, description }) => {
   const media = image as Media
@@ -152,7 +154,15 @@ export const QuoteBlockComponent: React.FC<QuoteBlockType> = ({ image, descripti
           <div className="md:w-2/5 flex justify-center">
             <div className="w-56 md:w-64 rounded-2xl overflow-hidden shadow-2xl shadow-nude-700/10">
               {media?.url && (
-                <img src={media.url} alt={media.alt || ''} className="w-full h-auto block" />
+                <NextImage
+                  src={getMediaUrl(media.sizes?.medium?.url || media.url)}
+                  alt={media.alt || ''}
+                  width={media.sizes?.medium?.width || media.width || 256}
+                  height={media.sizes?.medium?.height || media.height || 256}
+                  className="w-full h-auto block"
+                  sizes="256px"
+                  quality={80}
+                />
               )}
             </div>
           </div>

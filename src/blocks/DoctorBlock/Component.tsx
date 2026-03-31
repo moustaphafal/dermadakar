@@ -2,6 +2,8 @@
 
 import React from 'react'
 import type { DoctorBlockType, Media } from '@/payload-types'
+import NextImage from 'next/image'
+import { getMediaUrl } from '@/utilities/getMediaUrl'
 
 export const DoctorBlockComponent: React.FC<DoctorBlockType> = ({
   sectionSubtitle,
@@ -25,8 +27,7 @@ export const DoctorBlockComponent: React.FC<DoctorBlockType> = ({
         <div className="text-center mb-16">
           <p className="text-nude-600 text-sm tracking-[0.3em] uppercase mb-3">{sectionSubtitle}</p>
           <h2 className="text-3xl md:text-5xl font-light text-nude-900">
-            {titlePrefix}{' '}
-            <span className="font-semibold">{titleBold}</span>
+            {titlePrefix} <span className="font-semibold">{titleBold}</span>
           </h2>
           <div className="flex items-center justify-center mt-6">
             <div className="h-px w-12 bg-nude-400/60" />
@@ -40,10 +41,14 @@ export const DoctorBlockComponent: React.FC<DoctorBlockType> = ({
           <div className="relative">
             <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-nude-300/40 shadow-2xl shadow-nude-700/10">
               {photoData?.url ? (
-                <img
-                  src={photoData.url}
+                <NextImage
+                  src={getMediaUrl(photoData.sizes?.large?.url || photoData.url)}
                   alt={photoData.alt || `Dr. ${doctorName}`}
+                  width={photoData.sizes?.large?.width || photoData.width || 700}
+                  height={photoData.sizes?.large?.height || photoData.height || 933}
                   className="w-full h-full object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  quality={80}
                 />
               ) : (
                 <div className="w-full h-full flex items-center justify-center">
@@ -77,7 +82,9 @@ export const DoctorBlockComponent: React.FC<DoctorBlockType> = ({
             <p className="text-nude-600 text-lg mb-6 italic">{specialty}</p>
 
             <div className="space-y-4 text-nude-800 leading-relaxed">
-              {biography?.map((item, i) => <p key={i}>{item.paragraph}</p>)}
+              {biography?.map((item, i) => (
+                <p key={i}>{item.paragraph}</p>
+              ))}
             </div>
 
             {/* Qualifications */}

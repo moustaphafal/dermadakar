@@ -1,6 +1,8 @@
 import { getCachedGlobal } from '@/utilities/getGlobals'
 import Link from 'next/link'
+import NextImage from 'next/image'
 import React from 'react'
+import { getMediaUrl } from '@/utilities/getMediaUrl'
 
 import type { Footer, Header, Media } from '@/payload-types'
 
@@ -34,7 +36,14 @@ export async function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-3 mb-6 group">
               {logo?.url ? (
-                <img src={logo.url} alt={logo.alt || siteName} className="h-10 w-auto" />
+                <NextImage
+                  src={getMediaUrl(logo.sizes?.thumbnail?.url || logo.url)}
+                  alt={logo.alt || siteName}
+                  width={40}
+                  height={40}
+                  className="h-10 w-auto"
+                  quality={80}
+                />
               ) : (
                 <div className="w-10 h-10 bg-rose-400 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-lg">{siteName.charAt(0)}</span>
