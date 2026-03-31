@@ -46,7 +46,7 @@ export default async function HomePage() {
 const siteUrl = getServerSideURL()
 
 export const metadata: Metadata = {
-  title: 'DermaDakar — Dermatologue à Dakar | Cabinet de Dermatologie Sénégal',
+  title: 'DouDerma — Dermatologue à Dakar | Cabinet de Dermatologie Sénégal',
   description:
     'Cabinet de dermatologie à Dakar, Sénégal. Dermatologue spécialiste en dermatologie médicale, chirurgicale et esthétique, vénérologie, médecine esthétique et lasers. Prenez rendez-vous.',
   keywords: [
@@ -77,18 +77,18 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'DermaDakar — Dermatologue à Dakar',
+    title: 'DouDerma — Dermatologue à Dakar',
     description:
       'Cabinet de dermatologie à Dakar, Sénégal. Spécialiste en dermatologie médicale, chirurgicale, esthétique, vénérologie et lasers.',
     type: 'website',
     locale: 'fr_FR',
     alternateLocale: 'en_US',
     url: siteUrl,
-    siteName: 'DermaDakar',
+    siteName: 'DouDerma',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DermaDakar — Dermatologue à Dakar',
+    title: 'DouDerma — Dermatologue à Dakar',
     description:
       'Cabinet de dermatologie à Dakar. Dermatologie médicale, chirurgicale, esthétique et laser.',
   },

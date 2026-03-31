@@ -221,7 +221,7 @@ export const seed = async ({
     payload.updateGlobal({
       slug: 'header',
       data: {
-        siteName: 'DermaDakar',
+        siteName: 'DouDerma',
         navLinks: [
           { label: 'Accueil', href: '#accueil' },
           { label: 'Avis', href: '#avis' },
@@ -251,7 +251,7 @@ export const seed = async ({
         ],
         address: 'Rue X, Quartier Y, Dakar, S\u00e9n\u00e9gal',
         phone: '+221 XX XXX XX XX',
-        email: 'contact@dermadakar.com',
+        email: 'contact@douderma.com',
         hours: 'Lun - Ven : 9h - 18h | Sam : 9h - 13h',
         ctaLink: 'https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui',
       },

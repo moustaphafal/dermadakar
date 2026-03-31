@@ -26,7 +26,7 @@ export const Header: GlobalConfig = {
           name: 'siteName',
           type: 'text',
           label: 'Nom du site',
-          defaultValue: 'DermaDakar',
+          defaultValue: 'DouDerma',
           admin: {
             width: '50%',
           },

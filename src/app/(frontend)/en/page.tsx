@@ -45,7 +45,7 @@ export default async function HomePageEN() {
 const siteUrl = getServerSideURL()
 
 export const metadata: Metadata = {
-  title: 'DermaDakar — Dermatologist in Dakar | Dermatology Clinic Senegal',
+  title: 'DouDerma — Dermatologist in Dakar | Dermatology Clinic Senegal',
   description:
     'Dermatology clinic in Dakar, Senegal. Dermatologist specialist in medical, surgical and aesthetic dermatology, venereology, aesthetic medicine and laser treatments. Book an appointment.',
   keywords: [
@@ -73,18 +73,18 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'DermaDakar — Dermatologist in Dakar',
+    title: 'DouDerma — Dermatologist in Dakar',
     description:
       'Dermatology clinic in Dakar, Senegal. Specialist in medical, surgical, aesthetic dermatology, venereology and lasers.',
     type: 'website',
     locale: 'en_US',
     alternateLocale: 'fr_FR',
     url: `${siteUrl}/en`,
-    siteName: 'DermaDakar',
+    siteName: 'DouDerma',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DermaDakar — Dermatologist in Dakar',
+    title: 'DouDerma — Dermatologist in Dakar',
     description:
       'Dermatology clinic in Dakar. Medical, surgical, aesthetic dermatology and laser treatments.',
   },

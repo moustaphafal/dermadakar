@@ -29,8 +29,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     >
       <head>
         <InitTheme />
-        <link href="/favicon.ico" rel="icon" sizes="32x32" />
-        <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+        <link href="/favicon3.svg" rel="icon" type="image/svg+xml" />
         <meta name="geo.region" content="SN-DK" />
         <meta name="geo.placename" content="Dakar" />
         <meta name="geo.position" content="14.6928;-17.4440" />
@@ -56,15 +55,15 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 export const metadata: Metadata = {
   metadataBase: new URL(getServerSideURL()),
   title: {
-    default: 'DermaDakar — Dermatologue à Dakar | Cabinet de Dermatologie',
-    template: '%s | DermaDakar',
+    default: 'DouDerma — Dermatologue à Dakar | Cabinet de Dermatologie',
+    template: '%s | DouDerma',
   },
   description:
     'Cabinet de dermatologie à Dakar, Sénégal. Dermatologue spécialiste en dermatologie médicale, chirurgicale et esthétique, vénérologie, médecine esthétique et lasers.',
   openGraph: mergeOpenGraph(),
   twitter: {
     card: 'summary_large_image',
-    site: '@dermadakar',
+    site: '@douderma',
   },
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION || undefined,

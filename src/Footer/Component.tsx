@@ -14,13 +14,13 @@ export async function Footer() {
     'Cabinet de dermatologie à Dakar, spécialisé en dermatologie médicale, chirurgicale et esthétique. Votre peau mérite le meilleur.'
   const address = footerData?.address ?? 'Rue X, Quartier Y, Dakar, Sénégal'
   const phone = footerData?.phone ?? '+221 XX XXX XX XX'
-  const email = footerData?.email ?? 'contact@dermadakar.com'
+  const email = footerData?.email ?? 'contact@douderma.com'
   const hours = footerData?.hours ?? 'Lun - Ven : 9h - 18h | Sam : 9h - 13h'
   const facebookUrl = footerData?.socialMedia?.facebook ?? '#'
   const instagramUrl = footerData?.socialMedia?.instagram ?? '#'
   const linkedinUrl = footerData?.socialMedia?.linkedin ?? '#'
 
-  const siteName = headerData?.siteName ?? 'DermaDakar'
+  const siteName = headerData?.siteName ?? 'DouDerma'
   const logo = typeof headerData?.logo === 'object' ? headerData.logo : null
 
   return (
@@ -40,7 +40,12 @@ export async function Footer() {
                   <span className="text-white font-bold text-lg">{siteName.charAt(0)}</span>
                 </div>
               )}
-              <span className="text-xl font-light tracking-wider text-nude-900">{siteName}</span>
+              <span
+                className="text-xl tracking-wider text-nude-900"
+                style={{ fontFamily: "'Yearlong', cursive" }}
+              >
+                {siteName}
+              </span>
             </Link>
             <p className="text-nude-500 text-sm leading-relaxed mb-6">{description}</p>
             {/* Social links */}

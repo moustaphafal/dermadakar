@@ -11,16 +11,16 @@ export function LocalBusinessJsonLd({ locale = 'fr' }: JsonLdProps) {
     '@context': 'https://schema.org',
     '@type': 'MedicalBusiness',
     '@id': `${siteUrl}/#organization`,
-    name: 'DermaDakar',
-    alternateName: 'Cabinet de Dermatologie DermaDakar',
+    name: 'DouDerma',
+    alternateName: 'Cabinet de Dermatologie DouDerma',
     description:
       locale === 'fr'
         ? 'Cabinet de dermatologie à Dakar, Sénégal. Spécialiste en dermatologie médicale, chirurgicale et esthétique, vénérologie, médecine esthétique et lasers.'
         : 'Dermatology clinic in Dakar, Senegal. Specialist in medical, surgical and aesthetic dermatology, venereology, aesthetic medicine and lasers.',
     url: siteUrl,
     telephone: '+221 XX XXX XX XX',
-    email: 'contact@dermadakar.com',
-    image: `${siteUrl}/og-dermadakar.webp`,
+    email: 'contact@douderma.com',
+    image: `${siteUrl}/og-douderma.webp`,
     priceRange: '$$',
     currenciesAccepted: 'XOF',
     paymentAccepted: 'Cash, Credit Card',
@@ -113,7 +113,7 @@ export function WebsiteJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     '@id': `${siteUrl}/#website`,
-    name: 'DermaDakar',
+    name: 'DouDerma',
     url: siteUrl,
     publisher: {
       '@id': `${siteUrl}/#organization`,

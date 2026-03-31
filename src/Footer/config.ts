@@ -84,7 +84,7 @@ export const Footer: GlobalConfig = {
           name: 'email',
           type: 'email',
           label: 'Email',
-          defaultValue: 'contact@dermadakar.com',
+          defaultValue: 'contact@douderma.com',
           admin: { width: '50%' },
         },
         {

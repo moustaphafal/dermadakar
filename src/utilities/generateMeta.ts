@@ -8,7 +8,7 @@ import { getServerSideURL } from './getURL'
 const getImageURL = (image?: Media | Config['db']['defaultIDType'] | null) => {
   const serverUrl = getServerSideURL()
 
-  let url = serverUrl + '/og-dermadakar.webp'
+  let url = serverUrl + '/og-douderma.webp'
 
   if (image && typeof image === 'object' && 'url' in image) {
     const ogUrl = image.sizes?.og?.url
@@ -27,8 +27,8 @@ export const generateMeta = async (args: {
   const ogImage = getImageURL(doc?.meta?.image)
 
   const title = doc?.meta?.title
-    ? doc?.meta?.title + ' | DermaDakar'
-    : 'DermaDakar — Cabinet de Dermatologie à Dakar'
+    ? doc?.meta?.title + ' | DouDerma'
+    : 'DouDerma — Cabinet de Dermatologie à Dakar'
 
   return {
     description: doc?.meta?.description,

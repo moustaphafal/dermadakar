@@ -40,7 +40,7 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
   const ctaLabel = data?.ctaLabel ?? 'Rendez-vous'
   const ctaLink =
     data?.ctaLink ?? 'https://afridoctor.com/fr/p/dermatologue/dakar/dounia-el-akkaoui'
-  const siteName = data?.siteName ?? 'DermaDakar'
+  const siteName = data?.siteName ?? 'DouDerma'
   const logo = typeof data?.logo === 'object' ? data.logo : null
 
   const isHomepage = pathname === '/'
@@ -59,7 +59,7 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             {logo?.url ? (
-              <img src={logo.url} alt={logo.alt || siteName} className="h-10 w-auto" />
+              <img src={logo.url} alt={logo.alt || siteName} className="h-10 w-auto rounded-full" />
             ) : (
               <div
                 className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-rose-400`}
@@ -69,7 +69,8 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
             )}
             <div>
               <span
-                className={`text-xl font-light tracking-wider transition-colors duration-300 text-white`}
+                className={`text-xl tracking-wider transition-colors duration-300 text-white`}
+                style={{ fontFamily: "'Yearlong', cursive" }}
               >
                 {siteName}
               </span>

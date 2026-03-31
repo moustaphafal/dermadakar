@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 2122 2122">
+  <!-- Generator: Adobe Illustrator 28.7.7, SVG Export Plug-In . SVG Version: 1.2.0 Build 194)  -->
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="1060.66" cy="1060.66" r="1060.66"/>
+    </clipPath>
+  </defs>
+  <g style="isolation: isolate;" clip-path="url(#circleClip)">
+    <g id="Layer_1">
+      <g>
+        <rect x="0" width="2121.32" height="2121.32" style="fill: #fdf9f5;"/>
+        <g>
+          <g style="mix-blend-mode: multiply; opacity: .2;">
+            <g>
+              <circle cx="724.153" cy="917.562" r="151.248" style="fill: #fff;"/>
+              <circle cx="1075.438" cy="1063.07" r="151.248" transform="translate(-436.715 1071.815) rotate(-45)" style="fill: #fff;"/>
+              <circle cx="1220.945" cy="1414.355" r="151.248" style="fill: #fff;"/>
+              <circle cx="1075.438" cy="1765.64" r="151.248" transform="translate(-933.508 1277.594) rotate(-45)" style="fill: #fff;"/>
+              <circle cx="724.153" cy="1911.148" r="151.248" style="fill: #fff;"/>
+              <circle cx="372.868" cy="1765.64" r="151.247" transform="translate(-1399.613 2104.504) rotate(-88.899)" style="fill: #fff;"/>
+              <circle cx="227.361" cy="1414.355" r="151.248" style="fill: #fff;"/>
+              <circle cx="372.868" cy="1063.07" r="151.248" style="fill: #fff;"/>
+            </g>
+            <g>
+              <circle cx="732.364" cy="909.351" r="151.248" style="fill: #fffefe;"/>
+              <circle cx="1083.649" cy="1054.859" r="151.248" style="fill: #fffefd;"/>
+              <circle cx="1229.156" cy="1406.144" r="151.248" style="fill: #fefdfc;"/>
+              <circle cx="1083.649" cy="1757.429" r="151.248" transform="translate(-925.297 1280.995) rotate(-45)" style="fill: #fefdfb;"/>
+              <circle cx="732.364" cy="1902.937" r="151.248" style="fill: #fdfcfb;"/>
+              <circle cx="381.079" cy="1757.429" r="151.248" transform="translate(-41.7 9.563) rotate(-1.363)" style="fill: #fdfbfa;"/>
+              <circle cx="235.572" cy="1406.144" r="151.248" style="fill: #fcfafa;"/>
+              <circle cx="381.079" cy="1054.859" r="151.248" transform="translate(-634.282 578.424) rotate(-45)" style="fill: #fbfaf9;"/>
+            </g>
+            <g>
+              <circle cx="740.575" cy="901.14" r="151.248" style="fill: #fffefd;"/>
+              <circle cx="1091.86" cy="1046.648" r="151.248" transform="translate(-420.293 1078.617) rotate(-45)" style="fill: #fefdfc;"/>
+              <circle cx="1237.367" cy="1397.933" r="151.248" style="fill: #fdfbfa;"/>
+              <circle cx="1091.86" cy="1749.218" r="151.248" transform="translate(-917.086 1284.396) rotate(-45)" style="fill: #fcfaf8;"/>
+              <circle cx="740.575" cy="1894.726" r="151.248" style="fill: #fcf9f7;"/>
+              <circle cx="389.29" cy="1749.218" r="151.248" style="fill: #fbf8f6;"/>
+              <circle cx="243.783" cy="1397.933" r="151.248" style="fill: #f8f6f5;"/>
+              <circle cx="389.29" cy="1046.648" r="151.248" style="fill: #f7f5f3;"/>
+            </g>
+            <g>
+              <circle cx="748.786" cy="892.93" r="151.248" style="fill: #fefdfc;"/>
+              <circle cx="1100.071" cy="1038.437" r="151.248" transform="translate(-412.082 1082.019) rotate(-45)" style="fill: #fefcfa;"/>
+              <circle cx="1245.578" cy="1389.722" r="151.248" style="fill: #fcfaf7;"/>
+              <circle cx="1100.071" cy="1741.007" r="151.248" transform="translate(-908.875 1287.797) rotate(-45)" style="fill: #fbf8f4;"/>
+              <circle cx="748.786" cy="1886.515" r="151.248" style="fill: #faf7f3;"/>
+              <circle cx="397.501" cy="1741.007" r="151.247" transform="translate(-1351.731 2100.593) rotate(-88.755)" style="fill: #f8f4f1;"/>
+              <circle cx="251.993" cy="1389.722" r="151.248" style="fill: #f5f1ef;"/>
+              <circle cx="397.501" cy="1038.437" r="151.248" style="fill: #f3efee;"/>
+            </g>
+            <g>
+              <circle cx="756.997" cy="884.719" r="151.248" style="fill: #fefcfb;"/>
+              <circle cx="1108.282" cy="1030.226" r="151.248" style="fill: #fefbf8;"/>
+              <circle cx="1253.789" cy="1381.511" r="151.248" style="fill: #fbf8f4;"/>
+              <circle cx="1108.282" cy="1732.796" r="151.248" transform="translate(-900.664 1291.198) rotate(-45)" style="fill: #faf5f1;"/>
+              <circle cx="756.997" cy="1878.304" r="151.248" style="fill: #f8f4ef;"/>
+              <circle cx="405.711" cy="1732.796" r="151.248" style="fill: #f6f1ed;"/>
+              <circle cx="260.204" cy="1381.511" r="151.248" style="fill: #f1ecea;"/>
+              <circle cx="405.711" cy="1030.226" r="151.248" style="fill: #efeae8;"/>
+            </g>
+            <g>
+              <circle cx="765.208" cy="876.508" r="151.248" style="fill: #fefcfa;"/>
+              <circle cx="1116.493" cy="1022.015" r="151.248" transform="translate(-395.66 1088.821) rotate(-45)" style="fill: #fefaf6;"/>
+              <circle cx="1262" cy="1373.3" r="151.248" style="fill: #faf6f2;"/>
+              <circle cx="1116.493" cy="1724.586" r="151.248" transform="translate(-892.453 1294.599) rotate(-45)" style="fill: #f9f3ed;"/>
+              <circle cx="765.208" cy="1870.093" r="151.248" style="fill: #f6f1eb;"/>
+              <circle cx="413.922" cy="1724.586" r="151.248" style="fill: #f4ede8;"/>
+              <circle cx="268.415" cy="1373.3" r="151.248" style="fill: #eee7e5;"/>
+              <circle cx="413.922" cy="1022.015" r="151.248" style="fill: #eae5e2;"/>
+            </g>
+            <g>
+              <circle cx="773.418" cy="868.297" r="151.248" style="fill: #fefbf9;"/>
+              <circle cx="1124.704" cy="1013.804" r="151.248" style="fill: #fdf9f5;"/>
+              <circle cx="1270.211" cy="1365.089" r="151.248" style="fill: #f9f4ef;"/>
+              <circle cx="1124.704" cy="1716.375" r="151.248" transform="translate(-884.242 1298) rotate(-45)" style="fill: #f7f0e9;"/>
+              <circle cx="773.418" cy="1861.882" r="151.248" style="fill: #f5eee7;"/>
+              <circle cx="422.133" cy="1716.375" r="151.248" transform="translate(-44.525 11.567) rotate(-1.491)" style="fill: #f2eae3;"/>
+              <circle cx="276.626" cy="1365.089" r="151.248" style="fill: #eae3e0;"/>
+              <circle cx="422.133" cy="1013.804" r="151.248" transform="translate(-593.228 595.43) rotate(-45)" style="fill: #e6e0dc;"/>
+            </g>
+            <g>
+              <circle cx="781.629" cy="860.086" r="151.248" style="fill: #fefaf8;"/>
+              <circle cx="1132.914" cy="1005.593" r="151.248" style="fill: #fdf8f3;"/>
+              <circle cx="1278.422" cy="1356.878" r="151.248" style="fill: #f9f2ed;"/>
+              <circle cx="1132.914" cy="1708.164" r="151.248" transform="translate(-876.031 1301.401) rotate(-45)" style="fill: #f6eee6;"/>
+              <circle cx="781.629" cy="1853.671" r="151.248" style="fill: #f3ebe3;"/>
+              <circle cx="430.344" cy="1708.164" r="151.248" style="fill: #efe6df;"/>
+              <circle cx="284.837" cy="1356.878" r="151.248" style="fill: #e7dedb;"/>
+              <circle cx="430.344" cy="1005.593" r="151.248" style="fill: #e2dad7;"/>
+            </g>
+            <g>
+              <circle cx="789.84" cy="851.875" r="151.248" style="fill: #fdfaf7;"/>
+              <circle cx="1141.125" cy="997.382" r="151.248" transform="translate(-371.028 1099.024) rotate(-45)" style="fill: #fdf7f1;"/>
+              <circle cx="1286.633" cy="1348.668" r="151.248" style="fill: #f8f0ea;"/>
+              <circle cx="1141.125" cy="1699.953" r="151.248" transform="translate(-867.82 1304.802) rotate(-45)" style="fill: #f5ebe2;"/>
+              <circle cx="789.84" cy="1845.46" r="151.248" style="fill: #f1e8df;"/>
+              <circle cx="438.555" cy="1699.953" r="151.248" style="fill: #ede3da;"/>
+              <circle cx="293.048" cy="1348.668" r="151.248" style="fill: #e3d9d6;"/>
+              <circle cx="438.555" cy="997.382" r="151.248" style="fill: #ded5d1;"/>
+            </g>
+            <g>
+              <circle cx="798.051" cy="843.664" r="151.248" style="fill: #fdf9f6;"/>
+              <circle cx="1149.336" cy="989.171" r="151.248" style="fill: #fdf6f0;"/>
+              <circle cx="1294.843" cy="1340.457" r="151.248" style="fill: #f7efe7;"/>
+              <circle cx="1149.336" cy="1691.742" r="151.248" transform="translate(-859.609 1308.203) rotate(-45)" style="fill: #f3e9df;"/>
+              <circle cx="798.051" cy="1837.249" r="151.248" style="fill: #efe6db;"/>
+              <circle cx="446.766" cy="1691.742" r="151.248" transform="translate(-46.766 13.047) rotate(-1.59)" style="fill: #ebdfd6;"/>
+              <circle cx="301.259" cy="1340.457" r="151.248" style="fill: #e0d4d0;"/>
+              <circle cx="446.766" cy="989.171" r="151.248" transform="translate(-568.595 605.633) rotate(-45)" style="fill: #dad0cb;"/>
+            </g>
+            <g>
+              <circle cx="806.262" cy="835.453" r="151.248" style="fill: #fdf8f5;"/>
+              <circle cx="1157.547" cy="980.96" r="151.248" transform="translate(-354.606 1105.826) rotate(-45)" style="fill: #fcf5ee;"/>
+              <circle cx="1303.054" cy="1332.246" r="151.248" style="fill: #f6ede5;"/>
+              <circle cx="1157.547" cy="1683.531" r="151.248" transform="translate(-851.398 1311.604) rotate(-45)" style="fill: #f2e7db;"/>
+              <circle cx="806.262" cy="1829.038" r="151.248" style="fill: #eee3d7;"/>
+              <circle cx="454.977" cy="1683.531" r="151.248" style="fill: #e9dbd1;"/>
+              <circle cx="309.47" cy="1332.246" r="151.248" style="fill: #ddd0cb;"/>
+              <circle cx="454.977" cy="980.96" r="151.248" style="fill: #d6cbc5;"/>
+            </g>
+            <g>
+              <circle cx="814.473" cy="827.242" r="151.248" style="fill: #fdf8f4;"/>
+              <circle cx="1165.758" cy="972.749" r="151.248" transform="translate(-346.395 1109.227) rotate(-45)" style="fill: #fcf4ec;"/>
+              <circle cx="1311.265" cy="1324.035" r="151.248" style="fill: #f5ebe2;"/>
+              <circle cx="1165.758" cy="1675.32" r="151.248" transform="translate(-843.187 1315.005) rotate(-45)" style="fill: #f1e4d7;"/>
+              <circle cx="814.473" cy="1820.827" r="151.248" style="fill: #ece0d3;"/>
+              <circle cx="463.188" cy="1675.32" r="151.248" transform="translate(-1224.151 2092.605) rotate(-88.436)" style="fill: #e7d8cc;"/>
+              <circle cx="317.681" cy="1324.035" r="151.248" style="fill: #d9cbc6;"/>
+              <circle cx="463.188" cy="972.749" r="151.248" style="fill: #d2c5c0;"/>
+            </g>
+            <g>
+              <circle cx="822.684" cy="819.031" r="151.248" style="fill: #fdf7f3;"/>
+              <circle cx="1173.969" cy="964.538" r="151.248" style="fill: #fcf3eb;"/>
+              <circle cx="1319.476" cy="1315.824" r="151.248" style="fill: #f4e9df;"/>
+              <circle cx="1173.969" cy="1667.109" r="151.248" transform="translate(-834.976 1318.406) rotate(-45)" style="fill: #efe2d4;"/>
+              <circle cx="822.684" cy="1812.616" r="151.248" style="fill: #eaddcf;"/>
+              <circle cx="471.399" cy="1667.109" r="151.248" transform="translate(-1040.754 821.614) rotate(-45)" style="fill: #e4d4c8;"/>
+              <circle cx="325.892" cy="1315.824" r="151.248" style="fill: #d6c6c1;"/>
+              <circle cx="471.399" cy="964.538" r="151.248" style="fill: #cec0ba;"/>
+            </g>
+            <g>
+              <circle cx="830.895" cy="810.82" r="151.248" style="fill: #fcf6f2;"/>
+              <circle cx="1182.18" cy="956.327" r="151.248" transform="translate(-329.973 1116.029) rotate(-45)" style="fill: #fcf2e9;"/>
+              <circle cx="1327.687" cy="1307.613" r="151.248" style="fill: #f3e7dd;"/>
+              <circle cx="1182.18" cy="1658.898" r="151.248" transform="translate(-826.765 1321.808) rotate(-45)" style="fill: #eedfd0;"/>
+              <circle cx="830.895" cy="1804.405" r="151.248" style="fill: #e8dacb;"/>
+              <circle cx="479.61" cy="1658.898" r="151.248" style="fill: #e2d1c3;"/>
+              <circle cx="334.103" cy="1307.613" r="151.248" style="fill: #d2c1bc;"/>
+              <circle cx="479.61" cy="956.327" r="151.248" style="fill: #c9bbb4;"/>
+            </g>
+            <g>
+              <circle cx="839.106" cy="802.609" r="151.248" style="fill: #fcf6f1;"/>
+              <circle cx="1190.391" cy="948.116" r="151.248" transform="translate(-321.762 1119.43) rotate(-45)" style="fill: #fbf1e7;"/>
+              <circle cx="1335.898" cy="1299.402" r="151.248" style="fill: #f2e5da;"/>
+              <circle cx="1190.391" cy="1650.687" r="151.248" transform="translate(-818.554 1325.209) rotate(-45)" style="fill: #edddcc;"/>
+              <circle cx="839.106" cy="1796.194" r="151.248" style="fill: #e7d7c7;"/>
+              <circle cx="487.821" cy="1650.687" r="151.248" transform="translate(-1176.483 2089.811) rotate(-88.317)" style="fill: #e0cdbe;"/>
+              <circle cx="342.314" cy="1299.402" r="151.248" style="fill: #cfbdb7;"/>
+              <circle cx="487.821" cy="948.116" r="151.248" style="fill: #c5b6ae;"/>
+            </g>
+            <g>
+              <circle cx="847.317" cy="794.398" r="151.248" style="fill: #fcf5f0;"/>
+              <circle cx="1198.602" cy="939.905" r="151.248" style="fill: #fbf0e5;"/>
+              <circle cx="1344.109" cy="1291.191" r="151.248" style="fill: #f1e4d7;"/>
+              <circle cx="1198.602" cy="1642.476" r="151.248" transform="translate(-810.344 1328.61) rotate(-45)" style="fill: #ecdac9;"/>
+              <circle cx="847.317" cy="1787.983" r="151.248" style="fill: #e5d5c3;"/>
+              <circle cx="496.032" cy="1642.476" r="151.248" transform="translate(-1016.122 831.818) rotate(-45)" style="fill: #decaba;"/>
+              <circle cx="350.525" cy="1291.191" r="151.248" style="fill: #cbb8b1;"/>
+              <circle cx="496.032" cy="939.905" r="151.248" style="fill: #c1b0a9;"/>
+            </g>
+            <g>
+              <circle cx="855.528" cy="786.187" r="151.248" style="fill: #fcf4ef;"/>
+              <circle cx="1206.813" cy="931.694" r="151.248" transform="translate(-305.34 1126.233) rotate(-45)" style="fill: #fbefe4;"/>
+              <circle cx="1352.32" cy="1282.98" r="151.248" style="fill: #f0e2d5;"/>
+              <circle cx="1206.813" cy="1634.265" r="151.248" transform="translate(-802.133 1332.011) rotate(-45)" style="fill: #ead8c5;"/>
+              <circle cx="855.528" cy="1779.772" r="151.248" style="fill: #e3d2bf;"/>
+              <circle cx="504.243" cy="1634.265" r="151.248" style="fill: #dbc6b5;"/>
+              <circle cx="358.736" cy="1282.98" r="151.248" style="fill: #c8b3ac;"/>
+              <circle cx="504.243" cy="931.694" r="151.248" style="fill: #bdaba3;"/>
+            </g>
+            <g>
+              <circle cx="863.739" cy="777.976" r="151.248" style="fill: #fcf4ee;"/>
+              <circle cx="1215.024" cy="923.484" r="151.248" style="fill: #faeee2;"/>
+              <circle cx="1360.531" cy="1274.769" r="151.248" style="fill: #efe0d2;"/>
+              <circle cx="1215.024" cy="1626.054" r="151.248" transform="translate(-793.922 1335.412) rotate(-45)" style="fill: #e9d6c2;"/>
+              <circle cx="863.739" cy="1771.562" r="151.248" style="fill: #e2cfbb;"/>
+              <circle cx="512.454" cy="1626.054" r="151.248" transform="translate(-999.7 838.62) rotate(-45)" style="fill: #d9c2b1;"/>
+              <circle cx="366.947" cy="1274.769" r="151.248" style="fill: #c5afa7;"/>
+              <circle cx="512.454" cy="923.484" r="151.248" transform="translate(-502.907 632.841) rotate(-45)" style="fill: #b9a69d;"/>
+            </g>
+            <g>
+              <circle cx="871.95" cy="769.765" r="151.248" style="fill: #fbf3ed;"/>
+              <circle cx="1223.235" cy="915.273" r="151.248" style="fill: #faede0;"/>
+              <circle cx="1368.742" cy="1266.558" r="151.248" style="fill: #eeded0;"/>
+              <circle cx="1223.235" cy="1617.843" r="151.248" transform="translate(-785.711 1338.813) rotate(-45)" style="fill: #e8d3be;"/>
+              <circle cx="871.95" cy="1763.351" r="151.248" style="fill: #e0ccb7;"/>
+              <circle cx="520.665" cy="1617.843" r="151.248" style="fill: #d7bfac;"/>
+              <circle cx="375.157" cy="1266.558" r="151.248" style="fill: #c1aaa2;"/>
+              <circle cx="520.665" cy="915.273" r="151.248" style="fill: #b5a197;"/>
+            </g>
+            <g>
+              <circle cx="880.161" cy="761.555" r="151.248" style="fill: #fbf2ec;"/>
+              <circle cx="1231.446" cy="907.062" r="151.248" transform="translate(-280.707 1136.436) rotate(-45)" style="fill: #faecdf;"/>
+              <circle cx="1376.953" cy="1258.347" r="151.248" style="fill: #eddccd;"/>
+              <circle cx="1231.446" cy="1609.632" r="151.248" transform="translate(-777.5 1342.214) rotate(-45)" style="fill: #e6d1ba;"/>
+              <circle cx="880.161" cy="1755.14" r="151.248" style="fill: #dec9b3;"/>
+              <circle cx="528.875" cy="1609.632" r="151.248" style="fill: #d5bba7;"/>
+              <circle cx="383.368" cy="1258.347" r="151.248" style="fill: #bea59d;"/>
+              <circle cx="528.875" cy="907.062" r="151.248" style="fill: #b19b92;"/>
+            </g>
+            <g>
+              <circle cx="888.372" cy="753.344" r="151.248" style="fill: #fbf2eb;"/>
+              <circle cx="1239.657" cy="898.851" r="151.248" style="fill: #faebdd;"/>
+              <circle cx="1385.164" cy="1250.136" r="151.248" style="fill: #ecdaca;"/>
+              <circle cx="1239.657" cy="1601.421" r="151.248" transform="translate(-769.289 1345.615) rotate(-45)" style="fill: #e5ceb7;"/>
+              <circle cx="888.372" cy="1746.929" r="151.248" style="fill: #dcc6af;"/>
+              <circle cx="537.086" cy="1601.421" r="151.248" transform="translate(-975.067 848.823) rotate(-45)" style="fill: #d3b8a3;"/>
+              <circle cx="391.579" cy="1250.136" r="151.248" style="fill: #baa098;"/>
+              <circle cx="537.086" cy="898.851" r="151.248" transform="translate(-478.274 643.045) rotate(-45)" style="fill: #ad968c;"/>
+            </g>
+            <g>
+              <circle cx="896.582" cy="745.133" r="151.248" style="fill: #fbf1e9;"/>
+              <circle cx="1247.868" cy="890.64" r="151.248" style="fill: #f9e9db;"/>
+              <circle cx="1393.375" cy="1241.925" r="151.248" style="fill: #ecd9c8;"/>
+              <circle cx="1247.868" cy="1593.21" r="151.248" transform="translate(-761.078 1349.016) rotate(-45)" style="fill: #e4ccb3;"/>
+              <circle cx="896.582" cy="1738.718" r="151.248" style="fill: #dbc4ab;"/>
+              <circle cx="545.297" cy="1593.21" r="151.248" style="fill: #d0b49e;"/>
+              <circle cx="399.79" cy="1241.925" r="151.248" style="fill: #b79c92;"/>
+              <circle cx="545.297" cy="890.64" r="151.248" style="fill: #a89186;"/>
+            </g>
+            <g>
+              <circle cx="904.793" cy="736.922" r="151.248" style="fill: #fbf1e8;"/>
+              <circle cx="1256.079" cy="882.429" r="151.248" transform="translate(-256.075 1146.639) rotate(-45)" style="fill: #f9e8d9;"/>
+              <circle cx="1401.586" cy="1233.714" r="151.248" style="fill: #ebd7c5;"/>
+              <circle cx="1256.079" cy="1584.999" r="151.248" transform="translate(-752.867 1352.417) rotate(-45)" style="fill: #e3c9b0;"/>
+              <circle cx="904.793" cy="1730.507" r="151.248" style="fill: #d9c1a7;"/>
+              <circle cx="553.508" cy="1584.999" r="151.248" transform="translate(-958.645 855.625) rotate(-45)" style="fill: #ceb19a;"/>
+              <circle cx="408.001" cy="1233.714" r="151.248" style="fill: #b3978d;"/>
+              <circle cx="553.508" cy="882.429" r="151.248" style="fill: #a48c80;"/>
+            </g>
+            <g>
+              <circle cx="913.004" cy="728.711" r="151.248" style="fill: #fbf0e7;"/>
+              <circle cx="1264.29" cy="874.218" r="151.248" style="fill: #f9e7d8;"/>
+              <circle cx="1409.797" cy="1225.503" r="151.248" style="fill: #ead5c2;"/>
+              <circle cx="1264.29" cy="1576.788" r="151.248" transform="translate(-744.656 1355.818) rotate(-45)" style="fill: #e1c7ac;"/>
+              <circle cx="913.004" cy="1722.296" r="151.247" style="fill: #d7bea3;"/>
+              <circle cx="561.719" cy="1576.788" r="151.248" transform="translate(-950.434 859.026) rotate(-45)" style="fill: #ccad95;"/>
+              <circle cx="416.212" cy="1225.503" r="151.248" style="fill: #b09288;"/>
+              <circle cx="561.719" cy="874.218" r="151.248" transform="translate(-453.642 653.248) rotate(-45)" style="fill: #a0867b;"/>
+            </g>
+            <g>
+              <circle cx="921.215" cy="720.5" r="151.248" style="fill: #faefe6;"/>
+              <circle cx="1272.5" cy="866.007" r="151.248" transform="translate(-239.653 1153.441) rotate(-45)" style="fill: #f9e6d6;"/>
+              <circle cx="1418.008" cy="1217.293" r="151.248" style="fill: #e9d3c0;"/>
+              <circle cx="1272.5" cy="1568.578" r="151.248" transform="translate(-736.445 1359.219) rotate(-45)" style="fill: #e0c4a8;"/>
+              <circle cx="921.215" cy="1714.085" r="151.247" style="fill: #d5bb9f;"/>
+              <circle cx="569.93" cy="1568.578" r="151.248" style="fill: #caaa90;"/>
+              <circle cx="424.423" cy="1217.293" r="151.248" style="fill: #ac8d83;"/>
+              <circle cx="569.93" cy="866.007" r="151.248" style="fill: #9c8175;"/>
+            </g>
+            <g>
+              <circle cx="929.426" cy="712.289" r="151.248" style="fill: #faefe5;"/>
+              <circle cx="1280.711" cy="857.796" r="151.248" transform="translate(-231.442 1156.842) rotate(-45)" style="fill: #f8e5d4;"/>
+              <circle cx="1426.218" cy="1209.082" r="151.248" style="fill: #e8d1bd;"/>
+              <circle cx="1280.711" cy="1560.367" r="151.248" transform="translate(-728.234 1362.62) rotate(-45)" style="fill: #dfc2a5;"/>
+              <circle cx="929.426" cy="1705.874" r="151.247" style="fill: #d4b89b;"/>
+              <circle cx="578.141" cy="1560.367" r="151.248" transform="translate(-934.012 865.828) rotate(-45)" style="fill: #c8a68c;"/>
+              <circle cx="432.634" cy="1209.082" r="151.248" style="fill: #a9897e;"/>
+              <circle cx="578.141" cy="857.796" r="151.248" transform="translate(-437.22 660.05) rotate(-45)" style="fill: #987c6f;"/>
+            </g>
+            <g>
+              <circle cx="937.637" cy="704.078" r="151.248" style="fill: #faeee4;"/>
+              <circle cx="1288.922" cy="849.585" r="151.248" style="fill: #f8e4d3;"/>
+              <circle cx="1434.429" cy="1200.871" r="151.248" style="fill: #e7cfbb;"/>
+              <circle cx="1288.922" cy="1552.156" r="151.248" transform="translate(-720.023 1366.022) rotate(-45)" style="fill: #ddc0a1;"/>
+              <circle cx="937.637" cy="1697.663" r="151.247" style="fill: #d2b597;"/>
+              <circle cx="586.352" cy="1552.156" r="151.248" transform="translate(-925.801 869.229) rotate(-45)" style="fill: #c5a287;"/>
+              <circle cx="440.845" cy="1200.871" r="151.248" style="fill: #a68479;"/>
+              <circle cx="586.352" cy="849.585" r="151.248" transform="translate(-429.009 663.451) rotate(-45)" style="fill: #947769;"/>
+            </g>
+            <g>
+              <circle cx="945.848" cy="695.867" r="151.248" style="fill: #faede3;"/>
+              <circle cx="1297.133" cy="841.374" r="151.248" transform="translate(-215.02 1163.644) rotate(-45)" style="fill: #f8e3d1;"/>
+              <circle cx="1442.64" cy="1192.66" r="151.248" style="fill: #e6ceb8;"/>
+              <circle cx="1297.133" cy="1543.945" r="151.248" transform="translate(-711.812 1369.423) rotate(-45)" style="fill: #dcbd9e;"/>
+              <circle cx="945.848" cy="1689.452" r="151.247" style="fill: #d0b393;"/>
+              <circle cx="594.563" cy="1543.945" r="151.248" style="fill: #c39f83;"/>
+              <circle cx="449.056" cy="1192.66" r="151.248" style="fill: #a27f73;"/>
+              <circle cx="594.563" cy="841.374" r="151.248" style="fill: #907164;"/>
+            </g>
+            <g>
+              <circle cx="954.059" cy="687.656" r="151.248" style="fill: #faede2;"/>
+              <circle cx="1305.344" cy="833.163" r="151.248" transform="translate(-206.809 1167.046) rotate(-45)" style="fill: #f7e2cf;"/>
+              <circle cx="1450.851" cy="1184.449" r="151.248" style="fill: #e5ccb5;"/>
+              <circle cx="1305.344" cy="1535.734" r="151.248" transform="translate(-703.601 1372.824) rotate(-45)" style="fill: #dbbb9a;"/>
+              <circle cx="954.059" cy="1681.241" r="151.247" style="fill: #cfb08f;"/>
+              <circle cx="602.774" cy="1535.734" r="151.248" transform="translate(-909.379 876.031) rotate(-45)" style="fill: #c19b7e;"/>
+              <circle cx="457.267" cy="1184.449" r="151.248" style="fill: #9f7b6e;"/>
+              <circle cx="602.774" cy="833.163" r="151.248" transform="translate(-412.587 670.253) rotate(-45)" style="fill: #8c6c5e;"/>
+            </g>
+            <g>
+              <circle cx="962.27" cy="679.445" r="151.248" style="fill: #f9ece1;"/>
+              <circle cx="1313.555" cy="824.952" r="151.248" style="fill: #f7e1cd;"/>
+              <circle cx="1459.062" cy="1176.238" r="151.248" style="fill: #e4cab3;"/>
+              <circle cx="1313.555" cy="1527.523" r="151.248" transform="translate(-695.39 1376.225) rotate(-45)" style="fill: #dab896;"/>
+              <circle cx="962.27" cy="1673.03" r="151.247" style="fill: #cdad8b;"/>
+              <circle cx="610.985" cy="1527.523" r="151.248" style="fill: #bf9879;"/>
+              <circle cx="465.478" cy="1176.238" r="151.248" style="fill: #9b7669;"/>
+              <circle cx="610.985" cy="824.952" r="151.248" transform="translate(-404.376 673.654) rotate(-45)" style="fill: #876758;"/>
+            </g>
+            <g>
+              <circle cx="970.481" cy="671.234" r="151.248" style="fill: #f9ebe0;"/>
+              <circle cx="1321.766" cy="816.741" r="151.248" transform="translate(-190.387 1173.848) rotate(-45)" style="fill: #f7e0cc;"/>
+              <circle cx="1467.273" cy="1168.027" r="151.248" style="fill: #e3c8b0;"/>
+              <circle cx="1321.766" cy="1519.312" r="151.248" transform="translate(-687.179 1379.626) rotate(-45)" style="fill: #d8b693;"/>
+              <circle cx="970.481" cy="1664.819" r="151.247" style="fill: #cbaa87;"/>
+              <circle cx="619.196" cy="1519.312" r="151.248" style="fill: #bc9475;"/>
+              <circle cx="473.689" cy="1168.027" r="151.248" style="fill: #987164;"/>
+              <circle cx="619.196" cy="816.741" r="151.248" style="fill: #836252;"/>
+            </g>
+            <g>
+              <circle cx="978.692" cy="663.023" r="151.248" style="fill: #f9ebdf;"/>
+              <circle cx="1329.977" cy="808.53" r="151.248" style="fill: #f7dfca;"/>
+              <circle cx="1475.484" cy="1159.816" r="151.248" style="fill: #e2c6ad;"/>
+              <circle cx="1329.977" cy="1511.101" r="151.248" transform="translate(-678.968 1383.027) rotate(-45)" style="fill: #d7b38f;"/>
+              <circle cx="978.692" cy="1656.608" r="151.247" style="fill: #c9a783;"/>
+              <circle cx="627.407" cy="1511.101" r="151.248" transform="translate(-884.746 886.235) rotate(-45)" style="fill: #ba9170;"/>
+              <circle cx="481.9" cy="1159.816" r="151.248" style="fill: #946c5f;"/>
+              <circle cx="627.407" cy="808.53" r="151.248" transform="translate(-387.954 680.457) rotate(-45)" style="fill: #7f5c4d;"/>
+            </g>
+            <g>
+              <circle cx="986.903" cy="654.812" r="151.248" style="fill: #f9eade;"/>
+              <circle cx="1338.188" cy="800.32" r="151.248" style="fill: #f6dec8;"/>
+              <circle cx="1483.695" cy="1151.605" r="151.248" style="fill: #e1c4ab;"/>
+              <circle cx="1338.188" cy="1502.89" r="151.248" transform="translate(-670.757 1386.428) rotate(-45)" style="fill: #d6b18b;"/>
+              <circle cx="986.903" cy="1648.397" r="151.247" style="fill: #c8a47f;"/>
+              <circle cx="635.618" cy="1502.89" r="151.248" style="fill: #b88d6b;"/>
+              <circle cx="490.111" cy="1151.605" r="151.248" style="fill: #91685a;"/>
+              <circle cx="635.618" cy="800.32" r="151.248" transform="translate(-379.743 683.858) rotate(-45)" style="fill: #7b5747;"/>
+            </g>
+            <g>
+              <circle cx="995.114" cy="646.601" r="151.248" style="fill: #f9e9dd;"/>
+              <circle cx="1346.399" cy="792.109" r="151.248" transform="translate(-165.754 1184.051) rotate(-45)" style="fill: #f6ddc7;"/>
+              <circle cx="1491.906" cy="1143.394" r="151.248" style="fill: #e0c3a8;"/>
+              <circle cx="1346.399" cy="1494.679" r="151.248" transform="translate(-662.547 1389.829) rotate(-45)" style="fill: #d4af88;"/>
+              <circle cx="995.114" cy="1640.186" r="151.247" style="fill: #c6a27b;"/>
+              <circle cx="643.829" cy="1494.679" r="151.248" style="fill: #b68967;"/>
+              <circle cx="498.321" cy="1143.394" r="151.248" style="fill: #8e6354;"/>
+              <circle cx="643.829" cy="792.109" r="151.248" transform="translate(-371.532 687.259) rotate(-45)" style="fill: #775241;"/>
+            </g>
+            <g>
+              <circle cx="1003.325" cy="638.391" r="151.248" style="fill: #f8e9dc;"/>
+              <circle cx="1354.61" cy="783.898" r="151.248" style="fill: #f6dcc5;"/>
+              <circle cx="1500.117" cy="1135.183" r="151.248" style="fill: #dfc1a5;"/>
+              <circle cx="1354.61" cy="1486.468" r="151.248" transform="translate(-654.336 1393.23) rotate(-45)" style="fill: #d3ac84;"/>
+              <circle cx="1003.325" cy="1631.975" r="151.247" style="fill: #c49f77;"/>
+              <circle cx="652.04" cy="1486.468" r="151.248" transform="translate(-860.114 896.438) rotate(-45)" style="fill: #b48662;"/>
+              <circle cx="506.532" cy="1135.183" r="151.248" style="fill: #8a5e4f;"/>
+              <circle cx="652.04" cy="783.898" r="151.248" transform="translate(-363.321 690.66) rotate(-45)" style="fill: #734d3b;"/>
+            </g>
+            <g>
+              <circle cx="1011.536" cy="630.18" r="151.248" style="fill: #f8e8db;"/>
+              <circle cx="1362.821" cy="775.687" r="151.248" transform="translate(-149.332 1190.853) rotate(-45)" style="fill: #f6dbc3;"/>
+              <circle cx="1508.328" cy="1126.972" r="151.248" style="fill: #dfbfa3;"/>
+              <circle cx="1362.821" cy="1478.257" r="151.248" transform="translate(-646.125 1396.631) rotate(-45)" style="fill: #d2aa81;"/>
+              <circle cx="1011.536" cy="1623.765" r="151.247" style="fill: #c29c73;"/>
+              <circle cx="660.25" cy="1478.257" r="151.248" style="fill: #b1825e;"/>
+              <circle cx="514.743" cy="1126.972" r="151.248" style="fill: #87594a;"/>
+              <circle cx="660.25" cy="775.687" r="151.248" transform="translate(-355.11 694.061) rotate(-45)" style="fill: #6f4736;"/>
+            </g>
+            <g>
+              <circle cx="1019.747" cy="621.969" r="151.248" style="fill: #f8e7da;"/>
+              <circle cx="1371.032" cy="767.476" r="151.248" transform="translate(-141.121 1194.254) rotate(-45)" style="fill: #f5dac2;"/>
+              <circle cx="1516.539" cy="1118.761" r="151.248" style="fill: #debda0;"/>
+              <circle cx="1371.032" cy="1470.046" r="151.248" transform="translate(-637.914 1400.032) rotate(-45)" style="fill: #d0a77d;"/>
+              <circle cx="1019.747" cy="1615.554" r="151.247" style="fill: #c1996f;"/>
+              <circle cx="668.461" cy="1470.046" r="151.248" transform="translate(-843.692 903.24) rotate(-45)" style="fill: #af7f59;"/>
+              <circle cx="522.954" cy="1118.761" r="151.248" style="fill: #835545;"/>
+              <circle cx="668.461" cy="767.476" r="151.248" transform="translate(-346.899 697.462) rotate(-45)" style="fill: #6b4230;"/>
+            </g>
+            <g>
+              <circle cx="1027.957" cy="613.758" r="151.248" style="fill: #f8e7d9;"/>
+              <circle cx="1379.243" cy="759.265" r="151.248" style="fill: #f5d9c0;"/>
+              <circle cx="1524.75" cy="1110.55" r="151.248" style="fill: #ddbb9e;"/>
+              <circle cx="1379.243" cy="1461.835" r="151.248" transform="translate(-629.703 1403.433) rotate(-45)" style="fill: #cfa579;"/>
+              <circle cx="1027.957" cy="1607.343" r="151.247" style="fill: #bf966b;"/>
+              <circle cx="676.672" cy="1461.835" r="151.248" transform="translate(-835.481 906.641) rotate(-45)" style="fill: #ad7b54;"/>
+              <circle cx="531.165" cy="1110.55" r="151.248" style="fill: #805040;"/>
+              <circle cx="676.672" cy="759.265" r="151.248" transform="translate(-338.689 700.863) rotate(-45)" style="fill: #663d2a;"/>
+            </g>
+            <g>
+              <circle cx="1036.168" cy="605.547" r="151.248" style="fill: #f8e6d8;"/>
+              <circle cx="1387.454" cy="751.054" r="151.248" transform="translate(-124.7 1201.056) rotate(-45)" style="fill: #f5d8be;"/>
+              <circle cx="1532.961" cy="1102.339" r="151.248" style="fill: #dcb99b;"/>
+              <circle cx="1387.454" cy="1453.624" r="151.248" transform="translate(-621.492 1406.834) rotate(-45)" style="fill: #cea276;"/>
+              <circle cx="1036.168" cy="1599.132" r="151.247" style="fill: #bd9367;"/>
+              <circle cx="684.883" cy="1453.624" r="151.248" style="fill: #ab7850;"/>
+              <circle cx="539.376" cy="1102.339" r="151.248" style="fill: #7c4b3b;"/>
+              <circle cx="684.883" cy="751.054" r="151.248" style="fill: #623824;"/>
+            </g>
+            <g>
+              <circle cx="1044.379" cy="597.336" r="151.248" style="fill: #f7e5d7;"/>
+              <circle cx="1395.664" cy="742.843" r="151.248" transform="translate(-116.489 1204.457) rotate(-45)" style="fill: #f5d7bc;"/>
+              <circle cx="1541.172" cy="1094.128" r="151.248" style="fill: #dbb898;"/>
+              <circle cx="1395.664" cy="1445.413" r="151.248" transform="translate(-613.281 1410.236) rotate(-45)" style="fill: #cda072;"/>
+              <circle cx="1044.379" cy="1590.921" r="151.247" style="fill: #bb9163;"/>
+              <circle cx="693.094" cy="1445.413" r="151.248" transform="translate(-819.059 913.443) rotate(-45)" style="fill: #a8744b;"/>
+              <circle cx="547.587" cy="1094.128" r="151.248" style="fill: #794635;"/>
+              <circle cx="693.094" cy="742.843" r="151.248" transform="translate(-322.267 707.665) rotate(-45)" style="fill: #5e321f;"/>
+            </g>
+            <g>
+              <circle cx="1052.59" cy="589.125" r="151.248" style="fill: #f7e5d6;"/>
+              <circle cx="1403.875" cy="734.632" r="151.248" style="fill: #f4d6bb;"/>
+              <circle cx="1549.383" cy="1085.918" r="151.248" style="fill: #dab696;"/>
+              <circle cx="1403.875" cy="1437.202" r="151.248" transform="translate(-605.07 1413.637) rotate(-45)" style="fill: #cb9d6f;"/>
+              <circle cx="1052.59" cy="1582.71" r="151.247" style="fill: #ba8e5f;"/>
+              <circle cx="701.305" cy="1437.202" r="151.248" transform="translate(-810.848 916.844) rotate(-45)" style="fill: #a67147;"/>
+              <circle cx="555.798" cy="1085.918" r="151.248" style="fill: #754230;"/>
+              <circle cx="701.305" cy="734.632" r="151.248" transform="translate(-314.056 711.066) rotate(-45)" style="fill: #5a2d19;"/>
+            </g>
+            <g>
+              <circle cx="1060.801" cy="580.914" r="151.248" style="fill: #f7e4d5;"/>
+              <circle cx="1412.086" cy="726.421" r="151.248" transform="translate(-100.067 1211.26) rotate(-45)" style="fill: #f4d5b9;"/>
+              <circle cx="1557.593" cy="1077.707" r="151.248" style="fill: #d9b493;"/>
+              <circle cx="1412.086" cy="1428.991" r="151.248" transform="translate(-596.859 1417.038) rotate(-45)" style="fill: #ca9b6b;"/>
+              <circle cx="1060.801" cy="1574.499" r="151.247" style="fill: #b88b5b;"/>
+              <circle cx="709.516" cy="1428.991" r="151.248" style="fill: #a46d42;"/>
+              <circle cx="564.009" cy="1077.707" r="151.248" style="fill: #723d2b;"/>
+              <circle cx="709.516" cy="726.421" r="151.248" transform="translate(-305.845 714.467) rotate(-45)" style="fill: #562813;"/>
+            </g>
+          </g>
+          <g>
+            <circle cx="1060.801" cy="580.914" r="151.248" style="fill: #f7e4d5;"/>
+            <circle cx="1412.086" cy="726.421" r="151.248" transform="translate(-100.067 1211.26) rotate(-45)" style="fill: #f4d5b9;"/>
+            <circle cx="1557.593" cy="1077.707" r="151.248" style="fill: #d9b493;"/>
+            <circle cx="1412.086" cy="1428.991" r="151.248" transform="translate(-596.859 1417.038) rotate(-45)" style="fill: #ca9b6b;"/>
+            <circle cx="1060.801" cy="1574.499" r="151.247" style="fill: #b88b5b;"/>
+            <circle cx="709.516" cy="1428.991" r="151.248" style="fill: #a46d42;"/>
+            <circle cx="564.009" cy="1077.707" r="151.248" style="fill: #723d2b;"/>
+            <circle cx="709.516" cy="726.421" r="151.248" transform="translate(-305.845 714.467) rotate(-45)" style="fill: #562813;"/>
+          </g>
+          <g style="mix-blend-mode: overlay;">
+            <path d="M1060.802,434.545c39.096,0,75.853,15.225,103.498,42.871,57.069,57.069,57.069,149.927,0,206.997-27.646,27.645-64.402,42.87-103.498,42.87s-75.853-15.225-103.499-42.87c-57.069-57.069-57.069-149.928,0-206.997,27.646-27.646,64.403-42.871,103.499-42.871M1060.802,429.666c-38.707,0-77.416,14.767-106.949,44.299-59.065,59.066-59.065,154.831,0,213.897,29.533,29.533,68.242,44.3,106.949,44.3s77.415-14.767,106.948-44.3c59.066-59.066,59.066-154.831,0-213.897-29.533-29.533-68.241-44.299-106.948-44.299h0Z" style="fill: #707070;"/>
+            <path d="M1412.087,580.052c80.707,0,146.368,65.661,146.368,146.369s-65.661,146.369-146.368,146.369-146.369-65.661-146.369-146.369,65.66-146.369,146.369-146.369M1412.087,575.173c-83.532,0-151.249,67.716-151.249,151.248s67.716,151.248,151.249,151.248,151.247-67.717,151.247-151.248-67.716-151.248-151.247-151.248h0Z" style="fill: #707070;"/>
+            <path d="M1557.594,931.338c39.096,0,75.853,15.225,103.498,42.87,57.069,57.069,57.069,149.928,0,206.997-27.645,27.645-64.401,42.871-103.498,42.871s-75.853-15.226-103.499-42.871c-57.069-57.069-57.069-149.928,0-206.997,27.646-27.645,64.402-42.87,103.499-42.87M1557.594,926.459c-38.708,0-77.416,14.766-106.949,44.299-59.066,59.066-59.066,154.831,0,213.898,29.533,29.533,68.241,44.299,106.949,44.299s77.415-14.766,106.948-44.299c59.066-59.066,59.066-154.831,0-213.898-29.533-29.533-68.24-44.299-106.948-44.299h0Z" style="fill: #707070;"/>
+            <path d="M1412.087,1282.623c80.707,0,146.368,65.661,146.368,146.369s-65.661,146.369-146.368,146.369-146.369-65.661-146.369-146.369,65.66-146.369,146.369-146.369M1412.087,1277.743c-83.532,0-151.249,67.716-151.249,151.248s67.716,151.248,151.249,151.248,151.247-67.716,151.247-151.248-67.716-151.248-151.247-151.248h0Z" style="fill: #707070;"/>
+            <path d="M1060.802,1428.13c39.096,0,75.853,15.226,103.498,42.87,57.069,57.069,57.069,149.928,0,206.997-27.646,27.645-64.402,42.871-103.498,42.871s-75.853-15.226-103.499-42.871c-57.069-57.069-57.069-149.928,0-206.997,27.646-27.645,64.403-42.87,103.499-42.87M1060.802,1423.251c-38.707,0-77.416,14.767-106.949,44.3-59.065,59.065-59.065,154.831,0,213.896,29.533,29.533,68.242,44.3,106.949,44.3s77.415-14.767,106.948-44.3c59.066-59.065,59.066-154.831,0-213.896-29.533-29.533-68.241-44.3-106.948-44.3h0Z" style="fill: #707070;"/>
+            <path d="M709.516,1282.623c80.708,0,146.368,65.661,146.368,146.369s-65.66,146.369-146.368,146.369-146.369-65.661-146.369-146.369,65.661-146.369,146.369-146.369M709.516,1277.743c-83.532,0-151.248,67.716-151.248,151.248s67.716,151.248,151.248,151.248,151.248-67.716,151.248-151.248-67.716-151.248-151.248-151.248h0Z" style="fill: #707070;"/>
+            <path d="M564.008,931.338c39.097,0,75.853,15.225,103.499,42.87,57.069,57.069,57.069,149.928,0,206.997-27.646,27.645-64.402,42.871-103.499,42.871s-75.853-15.226-103.498-42.871c-57.069-57.069-57.069-149.928,0-206.997,27.646-27.645,64.402-42.87,103.498-42.87M564.008,926.459c-38.707,0-77.415,14.766-106.948,44.299-59.066,59.066-59.066,154.831,0,213.898,29.533,29.533,68.24,44.299,106.948,44.299s77.416-14.766,106.949-44.299c59.065-59.066,59.065-154.831,0-213.898-29.533-29.533-68.241-44.299-106.949-44.299h0Z" style="fill: #707070;"/>
+            <path d="M709.516,580.052c80.708,0,146.368,65.661,146.368,146.369s-65.66,146.369-146.368,146.369-146.369-65.661-146.369-146.369,65.661-146.369,146.369-146.369M709.516,575.173c-83.532,0-151.248,67.716-151.248,151.248s67.716,151.248,151.248,151.248,151.248-67.717,151.248-151.248-67.716-151.248-151.248-151.248h0Z" style="fill: #707070;"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
