@@ -3,7 +3,6 @@
 import React from 'react'
 import type { CabinetBlockType, Media } from '@/payload-types'
 import NextImage from 'next/image'
-import { getMediaUrl } from '@/utilities/getMediaUrl'
 
 const icons: Record<string, React.ReactNode> = {
   sparkles: (
@@ -134,7 +133,7 @@ export const CabinetBlockComponent: React.FC<CabinetBlockType> = ({
                 >
                   {imageData?.url ? (
                     <NextImage
-                      src={getMediaUrl(imageData.sizes?.medium?.url || imageData.url)}
+                      src={imageData.sizes?.medium?.url || imageData.url!}
                       alt={photo.caption || ''}
                       width={imageData.sizes?.medium?.width || imageData.width || 900}
                       height={imageData.sizes?.medium?.height || imageData.height || 675}

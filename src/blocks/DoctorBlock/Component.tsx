@@ -3,7 +3,6 @@
 import React from 'react'
 import type { DoctorBlockType, Media } from '@/payload-types'
 import NextImage from 'next/image'
-import { getMediaUrl } from '@/utilities/getMediaUrl'
 
 export const DoctorBlockComponent: React.FC<DoctorBlockType> = ({
   sectionSubtitle,
@@ -42,7 +41,7 @@ export const DoctorBlockComponent: React.FC<DoctorBlockType> = ({
             <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-nude-300/40 shadow-2xl shadow-nude-700/10">
               {photoData?.url ? (
                 <NextImage
-                  src={getMediaUrl(photoData.sizes?.large?.url || photoData.url)}
+                  src={photoData.sizes?.large?.url || photoData.url!}
                   alt={photoData.alt || `Dr. ${doctorName}`}
                   width={photoData.sizes?.large?.width || photoData.width || 700}
                   height={photoData.sizes?.large?.height || photoData.height || 933}

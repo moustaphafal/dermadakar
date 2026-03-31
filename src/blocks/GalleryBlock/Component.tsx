@@ -3,7 +3,6 @@
 import React, { useState } from 'react'
 import type { GalleryBlockType, Media } from '@/payload-types'
 import NextImage from 'next/image'
-import { getMediaUrl } from '@/utilities/getMediaUrl'
 
 export const GalleryBlockComponent: React.FC<GalleryBlockType> = ({
   sectionSubtitle,
@@ -68,7 +67,7 @@ export const GalleryBlockComponent: React.FC<GalleryBlockType> = ({
               >
                 {imageData?.url ? (
                   <NextImage
-                    src={getMediaUrl(imageData.sizes?.small?.url || imageData.url)}
+                    src={imageData.sizes?.small?.url || imageData.url!}
                     alt={galleryImage.label}
                     width={imageData.sizes?.small?.width || imageData.width || 600}
                     height={imageData.sizes?.small?.height || imageData.height || 600}
@@ -119,7 +118,7 @@ export const GalleryBlockComponent: React.FC<GalleryBlockType> = ({
                 const img = filteredImages[selectedImage].image as Media | null | undefined
                 return img?.url ? (
                   <NextImage
-                    src={getMediaUrl(img.sizes?.large?.url || img.url)}
+                    src={img.sizes?.large?.url || img.url!}
                     alt={filteredImages[selectedImage].label}
                     width={img.sizes?.large?.width || img.width || 1400}
                     height={img.sizes?.large?.height || img.height || 1050}
