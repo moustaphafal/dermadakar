@@ -7,7 +7,6 @@ import React, { useEffect, useState } from 'react'
 import type { Header, Media } from '@/payload-types'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 import NextImage from 'next/image'
-import { getMediaUrl } from '@/utilities/getMediaUrl'
 
 interface HeaderClientProps {
   data: Header
@@ -62,7 +61,7 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
           <Link href="/" className="flex items-center gap-3 group">
             {logo?.url ? (
               <NextImage
-                src={getMediaUrl(logo.sizes?.thumbnail?.url || logo.url)}
+                src={logo.sizes?.thumbnail?.url || logo.url}
                 alt={logo.alt || siteName}
                 width={40}
                 height={40}

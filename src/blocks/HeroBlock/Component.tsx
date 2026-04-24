@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import NextImage from 'next/image'
 import type { HeroBlockType, Media } from '@/payload-types'
 
 export const HeroBlockComponent: React.FC<HeroBlockType> = ({
@@ -27,10 +28,13 @@ export const HeroBlockComponent: React.FC<HeroBlockType> = ({
     >
       {heroBackground?.url ? (
         <>
-          <img
+          <NextImage
             src={heroBackground.url}
             alt={heroBackground.alt || 'Fond Hero'}
+            fill
             className="absolute inset-0 h-full w-full object-cover blur-[4px] scale-105"
+            quality={80}
+            priority
           />
           <div className="absolute inset-0 bg-white/45" />
         </>
