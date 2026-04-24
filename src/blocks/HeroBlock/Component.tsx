@@ -32,7 +32,7 @@ export const HeroBlockComponent: React.FC<HeroBlockType> = ({
             src={heroBackground.url}
             alt={heroBackground.alt || 'Fond Hero'}
             fill
-            className="absolute inset-0 h-full w-full object-cover blur-[4px] scale-105"
+            className="absolute inset-0 h-full w-full object-cover blur-[4px] scale-105 md:scale-100"
             quality={80}
             priority
           />
