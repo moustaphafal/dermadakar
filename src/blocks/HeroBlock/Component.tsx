@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import type { HeroBlockType } from '@/payload-types'
+import type { HeroBlockType, Media } from '@/payload-types'
 
 export const HeroBlockComponent: React.FC<HeroBlockType> = ({
   subtitle,
@@ -15,29 +15,28 @@ export const HeroBlockComponent: React.FC<HeroBlockType> = ({
   phone,
   location,
   hours,
+  backgroundImage,
 }) => {
   const descLines = (description || '').split('\n')
+  const heroBackground = typeof backgroundImage === 'object' ? (backgroundImage as Media) : null
 
   return (
     <section
       id="accueil"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      <div className="absolute inset-0 bg-white" />
-
-      {/* Animated floating blobs */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-rose-400/20 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-rose-300/15 rounded-full blur-3xl animate-float-delayed" />
-      <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-rose-200/20 rounded-full blur-3xl animate-float-slow" />
-
-      {/* Subtle animated particles */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[15%] left-[20%] w-2 h-2 bg-rose-300/40 rounded-full animate-particle-1" />
-        <div className="absolute top-[40%] right-[15%] w-1.5 h-1.5 bg-rose-400/30 rounded-full animate-particle-2" />
-        <div className="absolute bottom-[30%] left-[35%] w-1 h-1 bg-nude-400/50 rounded-full animate-particle-3" />
-        <div className="absolute top-[60%] left-[10%] w-2.5 h-2.5 bg-rose-200/30 rounded-full animate-particle-4" />
-        <div className="absolute top-[25%] right-[30%] w-1.5 h-1.5 bg-rose-300/25 rounded-full animate-particle-5" />
-      </div>
+      {heroBackground?.url ? (
+        <>
+          <img
+            src={heroBackground.url}
+            alt={heroBackground.alt || 'Fond Hero'}
+            className="absolute inset-0 h-full w-full object-cover blur-[4px] scale-105"
+          />
+          <div className="absolute inset-0 bg-white/45" />
+        </>
+      ) : (
+        <div className="absolute inset-0 bg-white" />
+      )}
 
       <div className="relative z-10 container text-center px-4">
         {/* Elegant decorative line */}
@@ -60,20 +59,19 @@ export const HeroBlockComponent: React.FC<HeroBlockType> = ({
           <div className="h-px w-16 bg-rose-400 animate-expand-line" />
         </div>
 
-        <p className="text-rose-400 text-sm md:text-base tracking-[0.3em] uppercase mb-6 opacity-0 animate-fade-in-up animate-delay-100">
+        <p className="text-nude-800 text-sm md:text-base tracking-[0.3em] uppercase mb-6 opacity-0 animate-fade-in-up animate-delay-100">
           {subtitle}
         </p>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-nude-900 mb-6 leading-tight opacity-0 animate-fade-in-up animate-delay-200">
-          Dr.{' '}
-          <span className="font-semibold animate-text-shimmer bg-clip-text">{doctorName}</span>
+          Dr. <span className="font-semibold animate-text-shimmer bg-clip-text">{doctorName}</span>
         </h1>
 
-        <h2 className="text-xl md:text-2xl text-nude-600 font-light mb-4 opacity-0 animate-fade-in-up animate-delay-300">
+        <h2 className="text-xl md:text-2xl text-nude-800 font-light mb-4 opacity-0 animate-fade-in-up animate-delay-300">
           {specialty}
         </h2>
 
-        <p className="text-nude-500 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed opacity-0 animate-fade-in-up animate-delay-400">
+        <p className="text-nude-700 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed opacity-0 animate-fade-in-up animate-delay-400">
           {descLines.map((line, i) => (
             <React.Fragment key={i}>
               {i > 0 && <br />}
@@ -104,7 +102,7 @@ export const HeroBlockComponent: React.FC<HeroBlockType> = ({
         </div>
 
         {/* Contact info strip */}
-        <div className="mt-16 flex flex-col md:flex-row gap-8 justify-center text-nude-500 text-sm opacity-0 animate-fade-in-up animate-delay-500">
+        <div className="mt-16 flex flex-col md:flex-row gap-8 justify-center text-nude-800 text-sm opacity-0 animate-fade-in-up animate-delay-500">
           {phone && (
             <div className="flex items-center justify-center gap-2 hover:text-rose-400 transition-colors duration-300 group cursor-default">
               <svg
@@ -180,11 +178,7 @@ export const HeroBlockComponent: React.FC<HeroBlockType> = ({
             stroke="currentColor"
             strokeWidth={1.5}
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-            />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg>
         </a>
       </div>

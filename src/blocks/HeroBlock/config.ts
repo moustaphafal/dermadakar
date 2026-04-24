@@ -90,5 +90,11 @@ export const HeroBlock: Block = {
       defaultValue: 'Lun - Sam : Sur rendez-vous',
       label: 'Horaires',
     },
+    {
+      name: 'backgroundImage',
+      type: 'upload',
+      relationTo: 'media',
+      label: 'Image de fond (Hero)',
+    },
   ],
 }

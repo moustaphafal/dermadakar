@@ -809,6 +809,7 @@ export interface HeroBlockType {
   phone?: string | null;
   location?: string | null;
   hours?: string | null;
+  backgroundImage?: (string | null) | Media;
   id?: string | null;
   blockName?: string | null;
   blockType: 'heroBlock';
@@ -985,6 +986,7 @@ export interface ContactBlockType {
 export interface QuoteBlockType {
   image: string | Media;
   description: string;
+  secondaryQuote: string;
   id?: string | null;
   blockName?: string | null;
   blockType: 'quoteBlock';
@@ -1421,6 +1423,7 @@ export interface HeroBlockTypeSelect<T extends boolean = true> {
   phone?: T;
   location?: T;
   hours?: T;
+  backgroundImage?: T;
   id?: T;
   blockName?: T;
 }
@@ -1589,6 +1592,7 @@ export interface ContactBlockTypeSelect<T extends boolean = true> {
 export interface QuoteBlockTypeSelect<T extends boolean = true> {
   image?: T;
   description?: T;
+  secondaryQuote?: T;
   id?: T;
   blockName?: T;
 }

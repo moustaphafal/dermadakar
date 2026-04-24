@@ -8,16 +8,16 @@ export const Contact: React.FC = () => {
       <div className="container px-4">
         {/* Section title */}
         <div className="text-center mb-16">
-          <p className="text-white/70 text-sm tracking-[0.3em] uppercase mb-3">
+          <p className="text-nude-700 text-sm tracking-[0.3em] uppercase mb-3">
             Prenez rendez-vous
           </p>
-          <h2 className="text-3xl md:text-5xl font-light text-white">
+          <h2 className="text-3xl md:text-5xl font-light text-nude-900">
             Nous <span className="font-semibold">Contacter</span>
           </h2>
           <div className="flex items-center justify-center mt-6">
-            <div className="h-px w-12 bg-white/30" />
-            <div className="w-2 h-2 bg-white rounded-full mx-3" />
-            <div className="h-px w-12 bg-white/30" />
+            <div className="h-px w-12 bg-nude-500/40" />
+            <div className="w-2 h-2 bg-nude-700 rounded-full mx-3" />
+            <div className="h-px w-12 bg-nude-500/40" />
           </div>
         </div>
 
@@ -25,10 +25,10 @@ export const Contact: React.FC = () => {
           {/* Contact cards row */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
             {/* Address */}
-            <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/30 transition-all duration-300 text-center">
-              <div className="w-14 h-14 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/80 transition-all duration-300 text-center">
+              <div className="w-14 h-14 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
-                  className="w-6 h-6 text-white"
+                  className="w-6 h-6 text-nude-800"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -46,8 +46,8 @@ export const Contact: React.FC = () => {
                   />
                 </svg>
               </div>
-              <h4 className="text-white font-semibold text-sm mb-1">Adresse</h4>
-              <p className="text-white/80 text-sm">
+              <h4 className="text-nude-900 font-semibold text-sm mb-1">Adresse</h4>
+              <p className="text-nude-700 text-sm">
                 Rue X, Quartier Y
                 <br />
                 Dakar, Sénégal
@@ -55,10 +55,10 @@ export const Contact: React.FC = () => {
             </div>
 
             {/* Phone */}
-            <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/30 transition-all duration-300 text-center">
-              <div className="w-14 h-14 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/80 transition-all duration-300 text-center">
+              <div className="w-14 h-14 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
-                  className="w-6 h-6 text-white"
+                  className="w-6 h-6 text-nude-800"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -71,8 +71,8 @@ export const Contact: React.FC = () => {
                   />
                 </svg>
               </div>
-              <h4 className="text-white font-semibold text-sm mb-1">Téléphone</h4>
-              <p className="text-white/80 text-sm">
+              <h4 className="text-nude-900 font-semibold text-sm mb-1">Téléphone</h4>
+              <p className="text-nude-700 text-sm">
                 +221 XX XXX XX XX
                 <br />
                 +221 XX XXX XX XX
@@ -80,10 +80,10 @@ export const Contact: React.FC = () => {
             </div>
 
             {/* Email */}
-            <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/30 transition-all duration-300 text-center">
-              <div className="w-14 h-14 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/80 transition-all duration-300 text-center">
+              <div className="w-14 h-14 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
-                  className="w-6 h-6 text-white"
+                  className="w-6 h-6 text-nude-800"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -96,15 +96,15 @@ export const Contact: React.FC = () => {
                   />
                 </svg>
               </div>
-              <h4 className="text-white font-semibold text-sm mb-1">Email</h4>
-              <p className="text-white/80 text-sm">contact@douderma.com</p>
+              <h4 className="text-nude-900 font-semibold text-sm mb-1">Email</h4>
+              <p className="text-nude-700 text-sm">contact@douderma.com</p>
             </div>
 
             {/* Hours */}
-            <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/30 transition-all duration-300 text-center">
-              <div className="w-14 h-14 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/80 transition-all duration-300 text-center">
+              <div className="w-14 h-14 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
-                  className="w-6 h-6 text-white"
+                  className="w-6 h-6 text-nude-800"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -117,8 +117,8 @@ export const Contact: React.FC = () => {
                   />
                 </svg>
               </div>
-              <h4 className="text-white font-semibold text-sm mb-1">Horaires</h4>
-              <p className="text-white/80 text-sm">
+              <h4 className="text-nude-900 font-semibold text-sm mb-1">Horaires</h4>
+              <p className="text-nude-700 text-sm">
                 Lun - Ven : 9h - 18h
                 <br />
                 Sam : 9h - 13h
@@ -128,7 +128,7 @@ export const Contact: React.FC = () => {
 
           {/* CTA Button */}
           <div className="text-center mb-12">
-            <p className="text-white/80 text-lg mb-6">
+            <p className="text-nude-800 text-lg mb-6">
               Prenez soin de votre peau, prenez rendez-vous dès maintenant.
             </p>
             <a

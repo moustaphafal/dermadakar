@@ -24,5 +24,13 @@ export const QuoteBlock: Block = {
       defaultValue:
         'Parce que chaque peau mérite une approche personnalisée et des soins dermatologiques de qualité',
     },
+    {
+      name: 'secondaryQuote',
+      type: 'text',
+      required: true,
+      localized: true,
+      label: 'Deuxieme citation',
+      defaultValue: 'Let me make one thing clear, your skin',
+    },
   ],
 }
