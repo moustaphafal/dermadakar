@@ -2,11 +2,16 @@ import React from 'react'
 import type { QuoteBlockType } from '@/payload-types'
 import type { Media } from '@/payload-types'
 import NextImage from 'next/image'
-import { Cormorant_Garamond } from 'next/font/google'
+import { Cormorant_Garamond, Great_Vibes } from 'next/font/google'
 
 const secondaryQuoteFont = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ['400', '600'],
+})
+
+const primaryQuoteFont = Great_Vibes({
+  subsets: ['latin'],
+  weight: ['400'],
 })
 
 export const QuoteBlockComponent: React.FC<QuoteBlockType> = ({
@@ -33,8 +38,7 @@ export const QuoteBlockComponent: React.FC<QuoteBlockType> = ({
 
       <div className="relative z-10 min-h-[60vh] md:min-h-[75vh] flex items-center justify-center px-6 md:px-12">
         <p
-          className="text-white text-2xl md:text-4xl lg:text-5xl leading-tight text-center max-w-4xl drop-shadow-[0_3px_12px_rgba(0,0,0,0.45)]"
-          style={{ fontFamily: "'Yearlong', cursive" }}
+          className={`${primaryQuoteFont.className} text-white text-2xl md:text-4xl lg:text-5xl leading-tight text-center max-w-4xl drop-shadow-[0_3px_12px_rgba(0,0,0,0.45)]`}
         >
           {description}
         </p>

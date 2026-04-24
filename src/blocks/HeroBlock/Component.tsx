@@ -68,7 +68,7 @@ export const HeroBlockComponent: React.FC<HeroBlockType> = ({
         </p>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-nude-900 mb-6 leading-tight opacity-0 animate-fade-in-up animate-delay-200">
-          Dr. <span className="font-semibold animate-text-shimmer bg-clip-text">{doctorName}</span>
+          Dr. <span className="font-semibold text-nude-900">{doctorName}</span>
         </h1>
 
         <h2 className="text-xl md:text-2xl text-nude-800 font-light mb-4 opacity-0 animate-fade-in-up animate-delay-300">
