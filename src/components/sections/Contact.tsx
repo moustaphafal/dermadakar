@@ -4,7 +4,7 @@ import React from 'react'
 
 export const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-24 bg-nude-400">
+    <section id="contact" className="py-24 bg-nude-100">
       <div className="container px-4">
         {/* Section title */}
         <div className="text-center mb-16">
@@ -15,9 +15,9 @@ export const Contact: React.FC = () => {
             Nous <span className="font-semibold">Contacter</span>
           </h2>
           <div className="flex items-center justify-center mt-6">
-            <div className="h-px w-12 bg-nude-500/40" />
-            <div className="w-2 h-2 bg-nude-700 rounded-full mx-3" />
-            <div className="h-px w-12 bg-nude-500/40" />
+            <div className="h-px w-12 bg-nude-300/60" />
+            <div className="w-2 h-2 bg-nude-400 rounded-full mx-3" />
+            <div className="h-px w-12 bg-nude-300/60" />
           </div>
         </div>
 

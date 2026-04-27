@@ -20,18 +20,18 @@ export const DoctorBlockComponent: React.FC<DoctorBlockType> = ({
   const titleBold = titleParts[titleParts.length - 1]
 
   return (
-    <section id="docteur" className="py-24 bg-nude-200">
+    <section id="docteur" className="py-24 bg-nude-100">
       <div className="container px-4">
         {/* Section title */}
         <div className="text-center mb-16">
-          <p className="text-nude-600 text-sm tracking-[0.3em] uppercase mb-3">{sectionSubtitle}</p>
+          <p className="text-nude-500 text-sm tracking-[0.3em] uppercase mb-3">{sectionSubtitle}</p>
           <h2 className="text-3xl md:text-5xl font-light text-nude-900">
             {titlePrefix} <span className="font-semibold">{titleBold}</span>
           </h2>
           <div className="flex items-center justify-center mt-6">
-            <div className="h-px w-12 bg-nude-400/60" />
-            <div className="w-2 h-2 bg-nude-500 rounded-full mx-3" />
-            <div className="h-px w-12 bg-nude-400/60" />
+            <div className="h-px w-12 bg-nude-300/60" />
+            <div className="w-2 h-2 bg-nude-400 rounded-full mx-3" />
+            <div className="h-px w-12 bg-nude-300/60" />
           </div>
         </div>
 
@@ -78,7 +78,7 @@ export const DoctorBlockComponent: React.FC<DoctorBlockType> = ({
             <h3 className="text-2xl md:text-3xl font-light text-nude-900 mb-2">
               Dr. <span className="font-semibold">{doctorName}</span>
             </h3>
-            <p className="text-nude-600 text-lg mb-6 italic">{specialty}</p>
+            <p className="text-nude-500 text-lg mb-6 italic">{specialty}</p>
 
             <div className="space-y-4 text-nude-800 leading-relaxed">
               {biography?.map((item, i) => (
@@ -93,8 +93,8 @@ export const DoctorBlockComponent: React.FC<DoctorBlockType> = ({
               </h4>
               {qualifications?.map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-nude-700 rounded-full mt-2 flex-shrink-0" />
-                  <p className="text-nude-700 text-sm">{item.label}</p>
+                  <div className="w-1.5 h-1.5 bg-nude-600 rounded-full mt-2 flex-shrink-0" />
+                  <p className="text-nude-600 text-sm">{item.label}</p>
                 </div>
               ))}
             </div>
